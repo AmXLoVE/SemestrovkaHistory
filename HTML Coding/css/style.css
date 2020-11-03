@@ -76,7 +76,7 @@ body {
     text-transform: uppercase;
     color: rgb(80, 80, 80);
     font-weight: 700;
-    margin: 0 20px;
+    margin-left: 40px;
     transition-duration: 0.3s;
 }
 
