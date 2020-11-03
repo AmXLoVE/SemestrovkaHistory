@@ -33,6 +33,20 @@
         </header>
 
         <main id="main">
+
+            <div class="filter-block">
+                <div class="filter-button">Фильтры</div>
+                <div class="filter-hidden ">
+                    <div>Дата:</div>
+                    <input type="radio" id="r1"><label for="r1">Сначала новые</label><br>
+                    <input type="radio" id="r2"><label for="r2">Сначала старые</label><br>
+                    <br>
+                    <div>Ключевые слова:</div> 
+                    <input type="checkbox" id="1"><label for="1">Россия</label>
+                    <input type="checkbox" id="2"><label for="2">Америка</label>
+                </div>         
+            </div>
+
             <div class="main-block">
                 <a href="#" id="post1" class="post-item">
                     <div class="post-container">
@@ -142,6 +156,18 @@
             </div>
         </main>
         
-        <script src=""></script>
+        <script>
+            let coll = document.getElementsByClassName('filter-button');
+            for (let i=0; i<coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    let content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px'
+                    }
+                })
+            }
+        </script>
     </body>
 </html>
