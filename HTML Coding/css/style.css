@@ -2,6 +2,7 @@
     --orange-color: #ff7b00;
     --gray-color: #212121;
     --white-color: #ffffff;
+    --lightgray-color: #646464;
 }
 
 *,
@@ -74,7 +75,7 @@ body {
 .nav-link {
     font-size: 25px;
     text-transform: uppercase;
-    color: rgb(80, 80, 80);
+    color: var(--lightgray-color);
     font-weight: 700;
     margin-left: 40px;
     transition-duration: 0.3s;
@@ -89,6 +90,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--orange-color);
+    position: relative;
+    z-index: 2;
 }
 
 .filter-button {
@@ -153,7 +156,7 @@ body {
 }
 
 .post-container:hover{
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     transition-duration: 0.3s;
 }
 
