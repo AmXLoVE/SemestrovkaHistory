@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+p, div::selection {
+    background: var(--orange-color);
+    color: var(--white-color);
+}
+
 html {
     font-size: 15px;
 }
@@ -195,4 +200,69 @@ body {
 
 #post5 {
     background-image: url(../images/5.jpg);
+}
+
+.main-block-article {
+    width: 100%;
+    max-width: 1080px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-headline {
+    color: var(--gray-color);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article-image {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.article-data {
+    margin-top: 10px;
+    color: var(--gray-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.article-keywordlist {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-keyword {
+    margin-right: 20px;
+    color: var(--orange-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.article-text {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: var(--gray-color);
+    font-size: 25px;
+    font-weight: 400;
 }
