@@ -37,13 +37,20 @@
             <div class="filter-block">
                 <div class="filter-button">Фильтры</div>
                 <div class="filter-hidden ">
-                    <div>Дата:</div>
-                    <input type="radio" id="r1"><label for="r1">Сначала новые</label><br>
-                    <input type="radio" id="r2"><label for="r2">Сначала старые</label><br>
-                    <br>
-                    <div>Ключевые слова:</div> 
-                    <input type="checkbox" id="1"><label for="1">Россия</label>
-                    <input type="checkbox" id="2"><label for="2">Америка</label>
+                    <div class="filter-datablock">
+                        <div class="filter-headline">Дата:</div>
+                        <div class="filter-datalist">
+                            <div><div class="filter-data"><input type="radio" id="r1" name="data" checked><label for="r1">Сначала новые</label></div></div>
+                            <div><div class="filter-data"><input type="radio" id="r2" name="data"><label for="r2">Сначала старые</label></div></div>
+                        </div>  
+                    </div>
+                    <div class="filter-keywordsblock">
+                        <div class="filter-headline">Ключевые слова:</div> 
+                        <div class="filter-keywordlist">
+                            <div class="filter-keyword"><input type="checkbox" id="1"><label for="1">Россия</label></div>
+                            <div class="filter-keyword"><input type="checkbox" id="2"><label for="2">Америка</label></div>
+                        </div>
+                    </div>
                 </div>         
             </div>
 
