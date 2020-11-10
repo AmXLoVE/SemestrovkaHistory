@@ -292,10 +292,16 @@ body {
     background-size: cover;
 }
 
+.article-info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .article-data {
     display: inline-block;
     width: auto;
-    margin-top: 10px;
     background-color: var(--gray-color);
     color: var(--white-color);
     font-size: 18px;
@@ -330,12 +336,6 @@ body {
     color: var(--gray-color);
     font-size: 25px;
     font-weight: 400;
-}
-
-.article-info-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 svg {
