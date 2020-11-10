@@ -11,12 +11,14 @@
     box-sizing: border-box;
 }
 
-label {
-    cursor: pointer;
-}
-
 a {
     text-decoration: none;
+}
+
+label,
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
 }
 
 p, div::selection {
@@ -151,6 +153,7 @@ body {
     display: inline-block;
     width: auto;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .filter-keywordsblock {
@@ -171,6 +174,7 @@ body {
     display: inline-block;
     width: auto;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .filter-headline {
