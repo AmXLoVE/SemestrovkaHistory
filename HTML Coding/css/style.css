@@ -156,6 +156,19 @@ body {
     cursor: pointer;
 }
 
+#search-keyword {
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray-color);
+    padding-left: 8px;
+    margin-bottom: 10px;
+    height: 22px;
+    width: 250px;
+    border-radius: 8px;
+    border-style: none;
+}
+
 .filter-keywordsblock {
     padding-bottom: 20px;    
 }
