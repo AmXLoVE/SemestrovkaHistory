@@ -342,10 +342,29 @@ body {
     font-weight: 400;
 }
 
-svg {
-    fill: var(--orange-color);
+.like-button {
+    height: 50px;
+    width: 50px;
+}
+
+.like-button > svg {
+    fill: var(--white-color);
+    stroke: var(--orange-color);
+    stroke-width: 20;
+    width: auto;
+    height: auto;
     cursor: pointer;
-    fill-rule: nonzero;
+    transition-duration: 0.3s;
+}
+
+.like-button > svg:hover {
+    fill: var(--orange-color);
+    transition-duration: 0.3s;
+}
+
+.like-button > svg:active {
+    fill: var(--orange-color);
+    transition-duration: 0.3s;
 }
 
 @media (max-width: 875px) {
