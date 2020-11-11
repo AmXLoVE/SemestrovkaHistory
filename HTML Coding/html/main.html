@@ -13,6 +13,7 @@
         <title>Главная страница</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/filter.js"></script>
     </head>
     <body>
         <header id="header">
@@ -162,19 +163,5 @@
                 </a>
             </div>
         </main>
-        
-        <script>
-            let coll = document.getElementsByClassName('filter-button');
-            for (let i=0; i<coll.length; i++) {
-                coll[i].addEventListener('click', function() {
-                    let content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + 'px'
-                    }
-                })
-            }
-        </script>
     </body>
 </html>

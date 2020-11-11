@@ -347,8 +347,8 @@ body {
     width: 50px;
 }
 
+/*
 .like-button > svg {
-    fill: var(--white-color);
     stroke: var(--orange-color);
     stroke-width: 20;
     width: auto;
@@ -359,10 +359,21 @@ body {
 
 .like-button > svg:hover {
     fill: var(--orange-color);
+    opacity: .8;
+    transition-duration: 0.3s;
+}
+*/
+
+#like {
+    stroke: var(--orange-color);
+    stroke-width: 20;
+    width: auto;
+    height: auto;
+    cursor: pointer;
     transition-duration: 0.3s;
 }
 
-.like-button > svg:active {
+.active {
     fill: var(--orange-color);
     transition-duration: 0.3s;
 }
