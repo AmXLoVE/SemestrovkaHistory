@@ -219,6 +219,9 @@ body {
     margin-bottom: 40px;
     background-position: center;
     background-size: cover;
+    /*
+    background-image: attr(img-url url);
+    */
 }
 
 .post-container {
@@ -254,26 +257,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 30px;
-}
-
-#post1 {
-    background-image: url(../images/1.jpg);
-}
-
-#post2 {
-    background-image: url(../images/2.jpg);
-}
-
-#post3 {
-    background-image: url(../images/3.jpg);
-}
-
-#post4 {
-    background-image: url(../images/4.jpg);
-}
-
-#post5 {
-    background-image: url(../images/5.jpg);
 }
 
 .main-block-article {
