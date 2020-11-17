@@ -34,12 +34,20 @@ window.onload = function () {
     });
 
     let d = 1;
+    let pointedIndex = -1;
 
     table.addEventListener('click', (e) => {
         const tb = e.target;
         if (tb.nodeName !== 'TH') return;
         const index = tb.cellIndex;
         const type = tb.getAttribute('type');
+        if (pointedIndex === index) {
+            d *= -1;
+        }
+        else {
+            pointedIndex = index;
+            d = 1;
+        }
         sortTable(index, type);
     });
     
@@ -69,7 +77,6 @@ window.onload = function () {
             tbody.appendChild(rows[i]);
         }
         table.appendChild(tbody);
-        d *= -1;
     }
 
 }
