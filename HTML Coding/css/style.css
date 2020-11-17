@@ -15,6 +15,12 @@ a {
     text-decoration: none;
 }
 
+select, option {
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-weight: 400;   
+}
+
 label,
 input[type="radio"],
 input[type="checkbox"] {
@@ -413,18 +419,36 @@ body {
     outline: none;
 }
 
-table {
+.table {
     font-size: 18px;
     font-weight: 400;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #eceeef;
+}
+
+th {
+    text-align: left;
+    cursor: pointer;
+}
+
+tbody > tr:hover {
+    background-color: #eceeef;
 }
 
 .thead-orange {
     background-color: var(--orange-color);
     color: var(--white-color);
-}
-
-th {
-    cursor: pointer;
 }
 
 a.book {
