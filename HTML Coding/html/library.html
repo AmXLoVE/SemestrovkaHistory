@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/library.js"></script>
     </head>
     <body>
         <header id="header">
@@ -37,13 +38,22 @@
 
             <div class="main-block-library">
 
+                <div class="search-book">
+                    <div class="search-label">Поиск: </div>
+                    <select name="" class="filter">
+                        <option value="Название">Название</option>
+                        <option value="Автор">Автор</option>
+                    </select>
+                    <input type="text" id="search-text" placeholder="Найти">
+                </div>
+
                 <table class="table table-bordered table-hover">
                     <thead class="thead-orange">
                       <tr>
-                        <th>#</th>
-                        <th>Название</th>
-                        <th>Авторы</th>
-                        <th>Год издания</th>
+                        <th type="number">#</th>
+                        <th type="text">Название</th>
+                        <th type="text">Авторы</th>
+                        <th type="number">Год издания</th>
                         <th>Ссылки</th>
                       </tr>
                     </thead>
@@ -60,9 +70,9 @@
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>История России 2</td>
-                        <td>Иванов И.И., Петров П.П.</td>
-                        <td>2015</td>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П.</td>
+                        <td>2019</td>
                         <td>
                             <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
                             <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
@@ -70,9 +80,9 @@
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>История России 3</td>
-                        <td>Иванов И.И., Петров П.П.</td>
-                        <td>2019</td>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2015</td>
                         <td>
                             <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
                             <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>

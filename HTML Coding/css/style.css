@@ -97,6 +97,10 @@ body {
     transition-duration: 0.3s;
 }
 
+
+
+/*  ГЛАВНАЯ СТРАНИЦА  */
+
 .filter-block {
     width: 100%;
     height: 100%;
@@ -260,6 +264,11 @@ body {
     line-height: 30px;
 }
 
+
+
+
+/*  СТАТЬЯ  */
+
 .main-block-article {
     width: 100%;
     max-width: 1080px;
@@ -346,23 +355,6 @@ body {
     width: 50px;
 }
 
-/*
-.like-button > svg {
-    stroke: var(--orange-color);
-    stroke-width: 20;
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    transition-duration: 0.3s;
-}
-
-.like-button > svg:hover {
-    fill: var(--orange-color);
-    opacity: .8;
-    transition-duration: 0.3s;
-}
-*/
-
 #like {
     stroke: var(--orange-color);
     stroke-width: 20;
@@ -377,6 +369,10 @@ body {
     transition-duration: 0.3s;
 }
 
+
+
+/*  БИБЛИОТЕКА  */
+
 .main-block-library {
     width: 100%;
     max-width: 1080px;
@@ -385,9 +381,50 @@ body {
     margin: 0 auto;
 }
 
+.search-book {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-label {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.search-book > select {
+    margin-right: 8px;
+}
+
+#search-text {
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    padding-left: 8px;
+    margin-right: 8px;
+    height: 22px;
+    width: 250px;
+    border-radius: 8px;
+    border-style: none;
+    outline: none;
+}
+
+table {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .thead-orange {
     background-color: var(--orange-color);
     color: var(--white-color);
+}
+
+th {
+    cursor: pointer;
 }
 
 a.book {
@@ -401,7 +438,14 @@ a.book:hover {
     transition-duration: 0.3s;
 }
 
-@media (max-width: 875px) {
+
+
+
+
+
+/*  АДАПТИВНОСТЬ  */
+
+@media (max-width: 1054px) {
     .header-block {
         flex-direction: column;
     }
@@ -411,7 +455,7 @@ a.book:hover {
     }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 840px) {
     .nav {
         flex-direction: column;
         align-items: center;
