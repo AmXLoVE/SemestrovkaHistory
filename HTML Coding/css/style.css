@@ -189,6 +189,7 @@ body {
     width: auto;
     margin-right: 10px;
     cursor: pointer;
+    margin-bottom: 8px;
 }
 
 .filter-headline {
@@ -373,6 +374,30 @@ body {
 
 .active {
     fill: var(--orange-color);
+    transition-duration: 0.3s;
+}
+
+.main-block-library {
+    width: 100%;
+    max-width: 1080px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.thead-orange {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+a.book {
+    color: var(--orange-color);
+    margin-right: 5px;
+    transition-duration: 0.3s;
+}
+
+a.book:hover {
+    color: var(--gray-color);
     transition-duration: 0.3s;
 }
 
