@@ -438,7 +438,7 @@ body {
 
 .table thead th {
     vertical-align: bottom;
-    border: 2px solid #eceeef;
+    border-right: 2px solid var(--white-color);
     cursor: pointer;
 }
 
