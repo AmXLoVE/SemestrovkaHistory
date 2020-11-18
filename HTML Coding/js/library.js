@@ -5,7 +5,7 @@ window.onload = function () {
         inp.value = "";
     }
 
-    document.getElementsByClassName('filter')[0].value = "Название";
+    document.getElementsByClassName('filter')[0].value = "disabled";
 
     const table = document.querySelector('table');
     let search = document.getElementById('search-text');

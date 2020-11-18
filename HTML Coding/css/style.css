@@ -422,6 +422,13 @@ body {
     outline: none;
 }
 
+.notation {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--lightgray-color);
+    margin-bottom: 10px;
+}
+
 .table {
     font-size: 18px;
     font-weight: 400;
@@ -434,6 +441,11 @@ body {
     padding: 12px;
     vertical-align: top;
     border-top: 1px solid #eceeef;
+}
+
+th, td {
+    width: auto;
+    height: auto;
 }
 
 .table thead th {
