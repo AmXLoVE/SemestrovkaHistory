@@ -576,6 +576,7 @@ input[data-rule].invalid {
     font-weight: 400;
     color: var(--lightgray-color);
     transition-duration: 0.3s;
+    margin-left: 15px;
 }
 
 .sign:hover {
