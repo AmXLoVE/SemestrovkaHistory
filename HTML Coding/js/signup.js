@@ -35,7 +35,7 @@ window.onload = function () {
                 }
                 break;
             case 'parol2':
-                check = parol1 === value;
+                check = (parol1 === value) && (value.length > 0);
                 parolsAreEqual = check;
                 parol2 = value
                 break;
@@ -60,7 +60,7 @@ window.onload = function () {
         for (let inp of inputs) {
             if (inp.value.length < 1) {
                 check = false;
-                break;
+                inp.classList.add('invalid');
             }
         }
         if (!check) {
