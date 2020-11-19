@@ -443,11 +443,6 @@ body {
     border-top: 1px solid #eceeef;
 }
 
-th, td {
-    width: auto;
-    height: auto;
-}
-
 .table thead th {
     vertical-align: bottom;
     border-right: 2px solid var(--white-color);
@@ -477,6 +472,81 @@ a.book:hover {
     color: var(--gray-color);
     transition-duration: 0.3s;
 }
+
+
+
+
+/* ЛОГИН */
+
+.main-block-login {
+    width: 100%;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.login-div {
+    width: 100%;
+    height: auto;
+}
+
+.form-search {
+    margin-top: 10px;
+}
+
+input[data-rule] {
+    color: var(--gray-color);
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 8px;
+    border-radius: 8px;
+    border: 2px solid var(--lightgray-color);
+}
+
+input[data-rule]:hover {
+    border: 2px solid var(--gray-color);
+}
+
+input[data-rule]:focus {
+    border: 2px solid var(--gray-color);
+}
+
+input[data-rule].valid {
+    border: 2px solid green;
+}
+
+input[data-rule].invalid {
+    border: 2px solid red;
+}
+
+.button {
+    background: var(--orange-color);
+    color: var(--white-color);
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.sign {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--lightgray-color);
+    transition-duration: 0.3s;
+}
+
+.sign:hover {
+    color: var(--orange-color);
+    transition-duration: 0.3s;
+}
+
 
 
 
