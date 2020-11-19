@@ -28,10 +28,15 @@ window.onload = function () {
                 check = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(value);
                 parolIsCorrect = check;
                 parol1 = value;
-                if (parol2 !== parol1) {
+                if (parol2 !== parol1 && value.length > 0) {
                     parolsAreEqual = false;
                     document.querySelector('input[data-rule=parol2]').classList.remove('valid');
                     document.querySelector('input[data-rule=parol2]').classList.add('invalid');
+                }
+                if (parol2 === parol1 && value.length > 0) {
+                    parolsAreEqual = true;
+                    document.querySelector('input[data-rule=parol2]').classList.remove('invalid');
+                    document.querySelector('input[data-rule=parol2]').classList.add('valid');
                 }
                 break;
             case 'parol2':

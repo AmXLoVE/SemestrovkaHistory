@@ -437,7 +437,7 @@ body {
     margin-bottom: 20px;
 }
 
-.table th, .table td {
+.table tbody th, .table tbody td {
     padding: 12px;
     vertical-align: top;
     border-top: 1px solid #eceeef;
@@ -447,6 +447,7 @@ body {
     vertical-align: bottom;
     border-right: 2px solid var(--white-color);
     cursor: pointer;
+    padding: 12px;
 }
 
 th {
@@ -473,6 +474,29 @@ a.book:hover {
     transition-duration: 0.3s;
 }
 
+/* закругление таблицы */
+.table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+thead tr {
+    background: none;
+}
+
+thead tr:first-child > td:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+thead tr:first-child > td:last-child {
+    border-radius:0 15px 0 0;
+}
+
+.table-links {
+    border: 0!important;
+    cursor: default!important;
+}
+
 
 
 
@@ -480,7 +504,7 @@ a.book:hover {
 
 .main-block-login {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -489,6 +513,15 @@ a.book:hover {
 .login-div {
     width: 100%;
     height: auto;
+
+    background-color: var(--white-color);
+    border: 5px solid var(--orange-color);
+    border-right: none;
+    border-left: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .form-search {
@@ -526,7 +559,6 @@ input[data-rule].invalid {
 .button {
     background: var(--orange-color);
     color: var(--white-color);
-    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
