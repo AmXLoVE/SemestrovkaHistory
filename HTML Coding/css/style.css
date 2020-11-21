@@ -726,6 +726,7 @@ div.up {
 
 .form-discussion-info {
     margin-top: 20px;
+    color: var(--gray-color);
 }
 
 
@@ -742,7 +743,7 @@ div.up {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     margin-top: 20px;
 }
 
@@ -777,8 +778,53 @@ div.up {
 .discussion-form > div.add {
     display: flex;
     justify-content: right;
+}   
+
+
+
+
+/* ОБСУЖДЕНИЕ */
+
+.main-block-discussion {
+    width: 100%;
+    max-width: 1080px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.discussion-headline {
+    color: var(--gray-color);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.discussion-text {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--gray-color);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.discussion-info {
+    display: inline-table;
+    width: auto;
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
 
 
 
@@ -815,3 +861,27 @@ div.up {
         background-position: 0 -60px;
     }
 }
+
+/* СКРОЛБАР */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--whitegray-color);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--lightgray-color);
+    border-radius: 8px;
+    border: 3px solid var(--whitegray-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-color);
+}
+
