@@ -682,11 +682,12 @@ div.up {
 .forum-discussion-item {
     background-color: var(--whitegray-color);
     border-radius: 15px;
-    height: 200px;
+    height: auto;
     margin-bottom: 20px;
     transition-duration: 0.3s;
-    position: relative;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .forum-discussion-item:hover {
@@ -724,9 +725,58 @@ div.up {
 }
 
 .form-discussion-info {
-    position: absolute;
-    bottom: 0;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* СОЗДАТЬ ОБСУЖДЕНИЕ */
+
+.discussion-form {
+    background-color: var(--whitegray-color);
+    border-radius: 15px;
+    height: auto;
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.discussion-form > input[type="text"] {
+    width: 100%;
+    height: auto;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.discussion-form > textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 150px;
+    min-height: 150px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.discussion-form > div.add {
+    display: flex;
+    justify-content: right;
 }
 
 
@@ -735,6 +785,9 @@ div.up {
 /*  АДАПТИВНОСТЬ  */
 
 @media (max-width: 1054px) {
+    #header {
+        position: relative;
+    }
     .header-block {
         flex-direction: column;
     }
@@ -745,8 +798,20 @@ div.up {
 }
 
 @media (max-width: 840px) {
+    #header {
+        position: relative;
+    }
     .nav {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media handheld {
+    #header {
+        position: relative;
+    }
+    .rollover {
+        background-position: 0 -60px;
     }
 }
