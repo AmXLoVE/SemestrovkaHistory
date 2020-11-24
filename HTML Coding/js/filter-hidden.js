@@ -13,6 +13,7 @@ window.onload = function () {
     }
 
     let search = document.getElementById('search-keyword');
+    search.value = "";
     let keywords = document.getElementsByClassName('filter-keyword'); 
     search.addEventListener('keyup', function () {
         let phrase = search.value.toUpperCase();
@@ -32,29 +33,33 @@ window.onload = function () {
     let dataFilterOld = document.getElementById('r2');
     dataFilterNew.checked = true;
     dataFilterOld.checked = false;
-    let newFirst = true;
-    let oldFirst = false;
 
-    dataFilterNew.addEventListener('click', function() {
-        if (oldFirst) {
-            var i = divs.length - 1;
-            for (; i--;) {
-                main.appendChild(divs[i]);
-            }
-            newFirst = true;
-            oldFirst = false;
+    dataFilterNew.addEventListener('change', function() {
+        var i = divs.length - 1;
+        for (; i--;) {
+            main.appendChild(divs[i]);
         }
     });
 
-    dataFilterOld.addEventListener('click', function() {
-        if (newFirst) {
-            var i = divs.length - 1;
-            for (; i--;) {
-                main.appendChild(divs[i]);
-            }
-            newFirst = false;
-            oldFirst = true;
+    dataFilterOld.addEventListener('change', function() {
+        var i = divs.length - 1;
+        for (; i--;) {
+            main.appendChild(divs[i]);
         }
     });
 
+    /*
+    
+    let checkboxes = document.querySelectorAll('input[type=checkbox');
+    for (let checkbox of checkboxes){
+        checkbox.checked = false;
+    }
+    
+    for (let i=0; i<checkboxes.length; i++) {
+        checkboxes[i].addEventListener('change', function() {
+            alert(checkboxes[i].value);
+        });
+    }
+
+    */
 }
