@@ -10,9 +10,10 @@
         <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#212121">
-        <title>Форум</title>
+        <title>Личный кабинет</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="../css/style.css">        
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
         <header id="header">
@@ -26,19 +27,22 @@
                     <a href="main.html" class="nav-link">Главная страница</a>
                     <a href="forum.html" class="nav-link">Форум</a>
                     <a href="library.html" class="nav-link">Библиотека</a>
-                    <a href="login.html" class="nav-link">Войти</a>
+                    <a href="account.html" class="nav-link">Личный кабинет</a>
                 </nav>
 
             </div>          
         </header>
 
         <main id="main">
-            <div class="main-block-forum">
-                <div class="forum-header">
-                    <div class="forum-headline">Обсуждения</div>
-                    <div><a href="new-discussion.html"><button class="add-discussion">Создать</button></a></div>
-                </div>
-                <div class="forum-discussions">
+            <div class="main-block-account">
+
+                <nav class="account-nav">
+                    <div class="account-nav-link" onclick="myArticles()">Избранные статьи</div>
+                    <div class="account-nav-link account-active" onclick="myDiscussions()">Мои обсуждения</div>
+                    <div class="account-nav-link" onclick="settings()">Настройки</div>
+                </nav>
+
+                <div class="account-discussions">
 
                     <a href="discussion.html" class="forum-discussion-item">
                         <div class="forum-discussion-container">
@@ -89,38 +93,9 @@
                             <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
                         </div>
                     </a>
-                    
-                    <a href="discussion.html" class="forum-discussion-item">
-                        <div class="forum-discussion-container">
-                            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                            <div class="forum-discussion-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                            </div>
-                            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                        </div>
-                    </a>
-                    
-                    <a href="discussion.html" class="forum-discussion-item">
-                        <div class="forum-discussion-container">
-                            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                            <div class="forum-discussion-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                            </div>
-                            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                        </div>
-                    </a>
-                    
-                    <a href="discussion.html" class="forum-discussion-item">
-                        <div class="forum-discussion-container">
-                            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                            <div class="forum-discussion-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                            </div>
-                            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                        </div>
-                    </a>
-                    
+
                 </div>
+
             </div>
         </main>
 
@@ -133,5 +108,6 @@
         </footer>
 
         <script src="../js/back-to-top.js"></script>
+        <script src="../js/account.js"></script>
     </body>
 </html>

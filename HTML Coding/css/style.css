@@ -232,9 +232,6 @@ body {
     margin-bottom: 40px;
     background-position: center;
     background-size: cover;
-    /*
-    background-image: attr(img-url url);
-    */
 }
 
 .post-container {
@@ -903,6 +900,60 @@ button.add-comment {
 }
 
 
+
+
+/* ЛИЧНЫЙ КАБИНЕТ */ 
+
+.main-block-account {
+    width: 100%;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.account-nav-link {
+    padding: 10px;
+    color: var(--gray-color);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.account-nav-link:hover {
+    border-bottom: 2px solid var(--lightgray-color);
+}
+
+.account-active {
+    border-bottom: 2px solid var(--orange-color);
+}
+
+.account-articles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.account-discussions {
+    max-width: 1040px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
 
 /*  АДАПТИВНОСТЬ  */
 
