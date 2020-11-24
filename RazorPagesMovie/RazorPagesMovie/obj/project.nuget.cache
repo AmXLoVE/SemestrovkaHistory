@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zbx50oIIxH6m6S5i9ZyRM0R8g7L6g3qiZQOd5Q/fRujUlmpG3ofkYaX0Y7q4x7M3KP9aM39ZpZE632bhIYpiRg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Allah\\.nuget\\packages\\npgsql\\5.0.0-preview1\\npgsql.5.0.0-preview1.nupkg.sha512",
+    "C:\\Users\\Allah\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
