@@ -48,18 +48,35 @@ window.onload = function () {
         }
     });
 
-    /*
-    
+
     let checkboxes = document.querySelectorAll('input[type=checkbox');
     for (let checkbox of checkboxes){
         checkbox.checked = false;
     }
     
+    let checked = new Set();
     for (let i=0; i<checkboxes.length; i++) {
         checkboxes[i].addEventListener('change', function() {
-            alert(checkboxes[i].value);
+            if (checkboxes[i].checked) {
+                checked.add(checkboxes[i].value);
+            } else {
+                checked.delete(checkboxes[i].value);
+            }
+            for (let j=0; j<divs.length; j++) {
+                let keys = divs[j].getAttribute('keywords').split(';');
+                if (contains(keys, Array.from(checked))) {
+                    divs[j].style.display = "";
+                } else {
+                    divs[j].style.display = "none";
+                }
+            }
         });
     }
 
-    */
+    function contains(where, what){
+        for(var i=0; i<what.length; i++){
+            if(where.indexOf(what[i]) == -1) return false;
+        }
+        return true;
+    }
 }
