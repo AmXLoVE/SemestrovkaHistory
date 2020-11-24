@@ -62,14 +62,26 @@ window.onload = function () {
             } else {
                 checked.delete(checkboxes[i].value);
             }
+            let noneCount = 0;
+            let notation = document.getElementsByClassName('main-notation')[0];
+            if (typeof notation !== "undefined") {
+                notation.remove();
+            }
             for (let j=0; j<divs.length; j++) {
                 let keys = divs[j].getAttribute('keywords').split(';');
                 if (contains(keys, Array.from(checked))) {
                     divs[j].style.display = "";
                 } else {
                     divs[j].style.display = "none";
+                    noneCount++;
                 }
             }
+            if (noneCount === divs.length) {
+                let div = document.createElement('div');
+                div.innerHTML = 'К сожалению, такой статьи пока нет!';
+                div.classList.add('main-notation');
+                main.appendChild(div);
+            } 
         });
     }
 

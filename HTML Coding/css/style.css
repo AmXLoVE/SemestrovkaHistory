@@ -272,6 +272,12 @@ body {
     line-height: 30px;
 }
 
+.main-notation {
+    font-size: 25px;
+    color: var(--gray-color);
+    margin-top: 40px;
+}
+
 
 
 
