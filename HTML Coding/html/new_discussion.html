@@ -13,6 +13,7 @@
         <title>Создать обсуждение</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/add-discussion.js"></script>
     </head>
     <body>
         <header id="header">
@@ -35,7 +36,7 @@
         <main id="main">
             <div class="main-block-forum">
                 <div class="forum-headline">Создать обсуждение</div>
-                <form action="" class="discussion-form">
+                <form action="" class="discussion-form" onsubmit="return false;">
                     <input type="text" placeholder="Введите заголовок">
                     <textarea placeholder="Введите текст"></textarea>
                     <div class="add"><button class="add-discussion" type="submit">Создать</button></div>
