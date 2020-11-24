@@ -26,4 +26,35 @@ window.onload = function () {
         }
     });
 
+    let main = document.getElementsByClassName('main-block')[0];
+    let divs = main.children;
+    let dataFilterNew = document.getElementById('r1');
+    let dataFilterOld = document.getElementById('r2');
+    dataFilterNew.checked = true;
+    dataFilterOld.checked = false;
+    let newFirst = true;
+    let oldFirst = false;
+
+    dataFilterNew.addEventListener('click', function() {
+        if (oldFirst) {
+            var i = divs.length - 1;
+            for (; i--;) {
+                main.appendChild(divs[i]);
+            }
+            newFirst = true;
+            oldFirst = false;
+        }
+    });
+
+    dataFilterOld.addEventListener('click', function() {
+        if (newFirst) {
+            var i = divs.length - 1;
+            for (; i--;) {
+                main.appendChild(divs[i]);
+            }
+            newFirst = false;
+            oldFirst = true;
+        }
+    });
+
 }

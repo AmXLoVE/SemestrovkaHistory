@@ -671,6 +671,8 @@ div.up {
     border-style: none;
     cursor: pointer;
     margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .forum-discussions {
