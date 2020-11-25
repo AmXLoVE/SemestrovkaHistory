@@ -904,7 +904,7 @@ button.add-comment {
 
 /* ЛИЧНЫЙ КАБИНЕТ */ 
 
-.main-block-account {
+#main-block-account {
     width: 100%;
     max-width: 1150px;
     padding-left: 20px;
