@@ -918,9 +918,15 @@ button.add-comment {
 
 .account-nav {
     width: 100%;
+    max-width: 1080px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.account-nav-link-container {
+    width: 196px;
+    text-align: center;
 }
 
 .account-nav-link {
@@ -930,6 +936,7 @@ button.add-comment {
     font-weight: 700;
     cursor: pointer;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .account-nav-link:hover {
