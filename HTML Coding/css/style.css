@@ -962,6 +962,41 @@ button.add-comment {
     margin-top: 20px;
 }
 
+.account-settings {
+    width: 100%;
+    max-width: 1040px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.account-login {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--gray-color);
+    
+}
+
+.account-login:before {
+    content: "Hi";
+    color: var(--orange-color);
+}
+
+.account-change {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.account-change > .login-div {
+    width: 410px;
+    display: inline-table;
+}
+
+
+
+
+
 /*  АДАПТИВНОСТЬ  */
 
 @media (max-width: 1054px) {

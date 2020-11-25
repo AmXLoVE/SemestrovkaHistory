@@ -85,34 +85,10 @@ window.onload = function () {
             return;
         }
 
-        /* проверка */
+        /* проверка на бэке */
 
         /* signup */
 
         document.location.href = 'account.html'
-        
-        /*
-        for (var i = 1; i < table.rows.length; i++) {
-            if (table.rows[i].cells[0].innerHTML == inputs[0].value) {
-                alert ('Студент с таким номером уже есть!');
-                return;
-            }
-        }
-    
-        let tr = document.createElement('TR');
-        for(let i=0; i < 7; i++){
-            let td = document.createElement('TD');
-            td.innerHTML = form.elements[i].value;
-            tr.appendChild(td);
-        }  
-        const tbody = table.querySelector('tbody'); 
-        tbody.appendChild(tr);
-    
-        for(let inp of inputs){
-            inp.value = '';
-            inp.classList.remove('invalid');
-            inp.classList.remove('valid');
-        }
-        */
     });
 }
