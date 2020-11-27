@@ -13,7 +13,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 select, option {
@@ -42,6 +42,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
     color: var(--gray-color);
+    line-height: normal;
 }
 
 #header {
@@ -98,6 +99,7 @@ body {
     font-weight: 700;
     margin-left: 40px;
     transition-duration: 0.3s;
+    padding: 0!important;
 }
 
 .nav-link:hover {
@@ -348,6 +350,7 @@ body {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .article-text {
@@ -997,9 +1000,80 @@ button.add-comment {
 
 
 
+/* О ПРОЕКТЕ */
+
+.main-block-about {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-headline {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--orange-color);
+    margin-bottom: 20px;
+}
+
+#carouselExampleIndicators {
+    width: 450px!important;
+    height: 600px!important;
+}
+
+.carousel-item {
+    width: 450px;
+    height: 600px;
+}
+
+.carousel-item > img {
+    height: 100%;
+}
+
+.carousel-caption > h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.carousel-caption > p {
+    font-weight: 400;
+    font-size: 18px;
+    height: 22px;
+}
+
+.contacts-div {
+    width: 450px;
+    height: 140px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: var(--orange-color);
+}
+
+.contact-item {
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+.contact-type {
+    float: left;
+}
+
+.contact-copy {
+    cursor: pointer;
+}
+
+
+
+
 /*  АДАПТИВНОСТЬ  */
 
-@media (max-width: 1054px) {
+@media (max-width: 1170px) {
     #header {
         position: relative;
     }
@@ -1010,15 +1084,37 @@ button.add-comment {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .main-block-about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-team {
+        margin-bottom: 40px;
+    }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 950px) {
     #header {
         position: relative;
     }
     .nav {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 790px) {
+    #carouselExampleIndicators {
+        width: 330px!important;
+        height: 440px!important;
+    }
+    .carousel-item {
+        width: 330px;
+        height: 440px;
+    }
+    .contacts-div {
+        width: 330px;
+        height: 130px;
     }
 }
 
