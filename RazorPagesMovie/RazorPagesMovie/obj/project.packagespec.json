@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+    "projectUniqueName": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
     "projectName": "RazorPagesMovie",
-    "projectPath": "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
-    "outputPath": "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
+    "projectPath": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+    "outputPath": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "net50"
@@ -29,6 +29,10 @@
         "Npgsql": {
           "target": "Package",
           "version": "[5.0.0-preview1, )"
+        },
+        "System.Configuration.ConfigurationManager": {
+          "target": "Package",
+          "version": "[5.0.0, )"
         }
       },
       "imports": [

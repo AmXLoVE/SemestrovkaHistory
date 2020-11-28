@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
+    "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {
+    "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "projectUniqueName": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
         "projectName": "RazorPagesMovie",
-        "projectPath": "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "projectPath": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
         "packagesPath": "C:\\Users\\Allah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Allah\\RiderProjects\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
+        "outputPath": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Allah\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,10 @@
             "Npgsql": {
               "target": "Package",
               "version": "[5.0.0-preview1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
