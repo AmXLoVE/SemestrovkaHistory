@@ -1,0 +1,313 @@
+﻿@page
+@model RazorPagesMovie.Pages.library
+
+@{
+    Layout = "Shared/_Layout";
+}
+
+<main id="main">
+
+            <div class="main-block-library">
+
+                <div class="search-book">
+                    <div class="search-label">Поиск: </div>
+                    <select name="" class="filter">
+                        <option value="disabled" disabled>Выберите фильтр</option>
+                        <option value="Название">Название</option>
+                        <option value="Автор">Автор</option>
+                    </select>
+                    <input type="text" id="search-text" placeholder="Введите запрос">
+                </div>
+
+                <div class="notation">
+                    Для сортировки нажмите на заголовок столбца
+                </div>
+
+                <table class="table">
+                    <thead class="thead-orange">
+                      <tr>
+                        <th type="number">#</th>
+                        <th type="text">Название</th>
+                        <th type="text">Авторы</th>
+                        <th type="number">Год издания</th>
+                        <th class="table-links">Ссылки</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2010</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2015</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2010</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2015</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2010</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2011</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2015</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2010</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2008</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2010</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2016</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2010</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2015</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2018</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2016</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2010</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2015</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>История России</td>
+                        <td>Иванов И.И., Петров П.П.</td>
+                        <td>2000</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>История США</td>
+                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
+                        <td>2019</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>История Татарстана</td>
+                        <td>Огурцов В.С., Иванов П.П.</td>
+                        <td>2015</td>
+                        <td>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
+                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+
+        </main>
+        

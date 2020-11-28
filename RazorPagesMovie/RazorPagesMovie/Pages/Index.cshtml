@@ -4,8 +4,132 @@
     ViewData["Title"] = "Моя страница";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>Hello, world! The time on the server is @DateTime.Now</p>
-</div>
+        <main id="main">
+
+            <div class="filter-block">
+                <div class="filter-button">Фильтр</div>
+                <div class="filter-hidden ">
+                    <div class="filter-datablock">
+                        <div class="filter-headline">Дата:</div>
+                        <div class="filter-datalist">
+                            <div class="filter-data"><input type="radio" id="r1" name="data" checked><label for="r1">Сначала новые</label></div>
+                            <div class="filter-data"><input type="radio" id="r2" name="data"><label for="r2">Сначала старые</label></div>
+                        </div>  
+                    </div>
+                    <div class="filter-keywordsblock">
+                        <div class="filter-headline">Ключевые слова:</div> 
+                        <input id="search-keyword" type="text" placeholder="Найти">
+                        <div class="filter-keywordlist">
+                            <div class="filter-keyword">
+                                <input type="checkbox" id="1" value="Россия">
+                                <label for="1">Россия</label>
+                            </div>
+                            <div class="filter-keyword">
+                                <input type="checkbox" id="2" value="Америка">
+                                <label for="2">Америка</label>
+                            </div>
+                            <div class="filter-keyword">
+                                <input type="checkbox" id="3" value="Литва">
+                                <label for="3">Литва</label>
+                            </div>
+                            <div class="filter-keyword">
+                                <input type="checkbox" id="4" value="14 век">
+                                <label for="4">14 век</label>
+                            </div>
+                            <div class="filter-keyword">
+                                <input type="checkbox" id="5" value="Великое княжество Литовское">
+                                <label for="5">Великое княжество Литовское</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="main-block">
+
+                <a href="/article" class="post-item" style="background-image: url(../images/1.jpg);" keywords="Литва;14 век;Великое княжество Литовское">
+                    <div class="post-container">
+                        <div class="post-data">09.11.20</div>
+                        <div class="post-headline">FAQ: Великое княжество Литовское. 200 лет неизвестной истории</div>
+                        <div class="post-keyword">Литва</div>
+                    </div>
+                </a>
+
+                <a href="/article" class="post-item" style="background-image: url(/images/2.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">30.10.20</div>
+                        <div class="post-headline">12 важнейших археологических находок десятилетия</div>
+                        <div class="post-keyword">Археология</div>
+                    </div>
+                </a>
+
+                <a href=/article" class="post-item" style="background-image: url(../images/3.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">25.10.20</div>
+                        <div class="post-headline">Киев глазами немецкого солдата: оккупация столицы в фотографиях</div>
+                        <div class="post-keyword">Киев</div>
+                    </div>
+                </a>
+
+                <a href="/article" class="post-item" style="background-image: url(../images/4.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">17.10.20</div>
+                        <div class="post-headline">Рюрик не был первым: когда скандинавы появились на Руси</div>
+                        <div class="post-keyword">Рюриковичи</div>
+                    </div>
+                </a>
+
+                <a href="/article" class="post-item" style="background-image: url(/images/5.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">15.10.20</div>
+                        <div class="post-headline">Галицко-Волынские ордынцы. Как русины с монголами нападали на Европу</div>
+                        <div class="post-keyword">Золотая Орда</div>
+                    </div>
+                </a>
+
+
+
+                <a href="/article" class="post-item" style="background-image: url(/images/1.jpg);" keywords="Литва;14 век;Великое княжество Литовское">
+                    <div class="post-container">
+                        <div class="post-data">01.10.20</div>
+                        <div class="post-headline">FAQ: Великое княжество Литовское. 200 лет неизвестной истории</div>
+                        <div class="post-keyword">Литва</div>
+                    </div>
+                </a>
+
+                <a href="/article" class="post-item" style="background-image: url(/images/2.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">25.09.20</div>
+                        <div class="post-headline">12 важнейших археологических находок десятилетия</div>
+                        <div class="post-keyword">Археология</div>
+                    </div>
+                </a>
+
+                <a href="/article" class="post-item" style="background-image: url(/images/3.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">16.09.20</div>
+                        <div class="post-headline">Киев глазами немецкого солдата: оккупация столицы в фотографиях</div>
+                        <div class="post-keyword">Киев</div>
+                    </div>
+                </a>
+
+                <a href="/article" class="post-item" style="background-image: url(../images/4.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">11.09.20</div>
+                        <div class="post-headline">Рюрик не был первым: когда скандинавы появились на Руси</div>
+                        <div class="post-keyword">Рюриковичи</div>
+                    </div>
+                </a>
+
+                <a href="/article" class="post-item" style="background-image: url(../images/5.jpg);" keywords="Россия">
+                    <div class="post-container">
+                        <div class="post-data">09.09.20</div>
+                        <div class="post-headline">Галицко-Волынские ордынцы. Как русины с монголами нападали на Европу</div>
+                        <div class="post-keyword">Золотая Орда</div>
+                    </div>
+                </a>
+
+            </div>
+        </main>
+
+<script src="../js/back-to-top.js"></script>

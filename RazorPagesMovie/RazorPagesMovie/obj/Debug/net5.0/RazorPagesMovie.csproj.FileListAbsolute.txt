@@ -59,10 +59,7 @@ C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPages
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\RazorPagesMovie.TagHelpers.input.cache
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\RazorPagesMovie.TagHelpers.output.cache
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\RazorPagesMovie.RazorCoreGenerate.cache
-C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\Main.cshtml.g.cs
-C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
@@ -95,3 +92,8 @@ C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPages
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\bin\Debug\net5.0\App.config
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\bin\Debug\net5.0\RazorPagesMovie.dll.config
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\about.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\login.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\article.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\forum.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\library.cshtml.g.cs

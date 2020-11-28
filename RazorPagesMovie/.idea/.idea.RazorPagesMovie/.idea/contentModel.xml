@@ -29,17 +29,36 @@
         <e p="Pages" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
-          <e p="Error.cshtml" t="Include" />
-          <e p="Error.cshtml.cs" t="Include" />
+          <e p="about.cshtml" t="Include" />
+          <e p="about.cshtml.cs" t="Include" />
+          <e p="account-articles.cshtml" t="Include" />
+          <e p="account-articles.cshtml.cs" t="Include" />
+          <e p="account-discussions.cshtml" t="Include" />
+          <e p="account-discussions.cshtml.cs" t="Include" />
+          <e p="account-settings.cshtml" t="Include" />
+          <e p="account-settings.cshtml.cs" t="Include" />
+          <e p="account.cshtml" t="Include" />
+          <e p="account.cshtml.cs" t="Include" />
+          <e p="article.cshtml" t="Include" />
+          <e p="article.cshtml.cs" t="Include" />
+          <e p="discussion.cshtml" t="Include" />
+          <e p="discussion.cshtml.cs" t="Include" />
+          <e p="forum.cshtml" t="Include" />
+          <e p="forum.cshtml.cs" t="Include" />
           <e p="Index.cshtml" t="Include" />
           <e p="Index.cshtml.cs" t="Include" />
-          <e p="Main.cshtml" t="Include" />
-          <e p="Privacy.cshtml" t="Include" />
-          <e p="Privacy.cshtml.cs" t="Include" />
+          <e p="library.cshtml" t="Include" />
+          <e p="library.cshtml.cs" t="Include" />
+          <e p="login.cshtml" t="Include" />
+          <e p="login.cshtml.cs" t="Include" />
+          <e p="new-discussion.cshtml" t="Include" />
+          <e p="new-discussion.cshtml.cs" t="Include" />
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
           </e>
+          <e p="signup.cshtml" t="Include" />
+          <e p="signup.cshtml.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -51,9 +70,46 @@
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
             <e p="site.css" t="Include" />
+            <e p="style.css" t="Include" />
+          </e>
+          <e p="favicon" t="Include">
+            <e p="android-chrome-192x192.png" t="Include" />
+            <e p="android-chrome-256x256.png" t="Include" />
+            <e p="apple-touch-icon.png" t="Include" />
+            <e p="browserconfig.xml" t="Include" />
+            <e p="favicon-16x16.png" t="Include" />
+            <e p="favicon-32x32.png" t="Include" />
+            <e p="favicon.ico" t="Include" />
+            <e p="hi-up.png" t="Include" />
+            <e p="HiSTORY.png" t="Include" />
+            <e p="mstile-150x150.png" t="Include" />
+            <e p="safari-pinned-tab.svg" t="Include" />
+            <e p="site.webmanifest" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
+          <e p="html" t="Include" />
+          <e p="images" t="Include">
+            <e p="1.jpg" t="Include" />
+            <e p="2.jpg" t="Include" />
+            <e p="3.jpg" t="Include" />
+            <e p="4.jpg" t="Include" />
+            <e p="5.jpg" t="Include" />
+            <e p="author1.jpeg" t="Include" />
+            <e p="author2.jpg" t="Include" />
+            <e p="author3.jpg" t="Include" />
+          </e>
           <e p="js" t="Include">
+            <e p="account-settings.js" t="Include" />
+            <e p="account.js" t="Include" />
+            <e p="add-comment.js" t="Include" />
+            <e p="add-discussion.js" t="Include" />
+            <e p="back-to-top.js" t="Include" />
+            <e p="copy-contact.js" t="Include" />
+            <e p="filter-hidden.js" t="Include" />
+            <e p="library.js" t="Include" />
+            <e p="like-button.js" t="Include" />
+            <e p="login.js" t="Include" />
+            <e p="signup.js" t="Include" />
             <e p="site.js" t="Include" />
           </e>
           <e p="lib" t="Include">
@@ -108,6 +164,13 @@
               <e p="jquery.validate.unobtrusive.min.js" t="Include" />
               <e p="LICENSE.txt" t="Include" />
             </e>
+          </e>
+          <e p="pdf" t="Include">
+            <e p="246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" t="Include" />
+          </e>
+          <e p="svg" t="Include">
+            <e p="heart1.svg" t="Include" />
+            <e p="heart2.svg" t="Include" />
           </e>
         </e>
       </e>
