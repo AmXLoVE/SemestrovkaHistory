@@ -1,0 +1,35 @@
+<nav class="account-nav">
+    <div class="account-nav-link-container">
+        <div class="account-nav-link account-active" onclick="settings()">Настройки</div>
+    </div>
+    <div class="account-nav-link-container">
+        <div class="account-nav-link" onclick="myArticles()">Избранные статьи</div>
+    </div>
+    <div class="account-nav-link-container">
+        <div class="account-nav-link" onclick="myDiscussions()">Мои обсуждения</div>
+    </div>
+</nav>
+
+<div class="account-settings">
+   <div class="account-login">VovkaRussia777</div>
+   <div class="account-change">
+
+        <div class="login-div">
+            <form action="" class="login-change" onsubmit="changeLogin(); return false;">
+                <input for="changeLogin" data-rule="newLogin" type="text" placeholder="Новый логин">
+                <input for="changeLogin" data-rule="oldParol" type="password" placeholder="Подтвердите пароль">
+                <input class="button" type="submit" value="Поменять логин">
+            </form>
+        </div>
+
+        <div class="login-div">
+            <form action="" class="parol-change" onsubmit="changeParol(); return false;">
+                <input for="changeParol" data-rule="oldParol" type="text" placeholder="Старый пароль">
+                <input for="changeParol" data-rule="newParol1" type="password" placeholder="Новый пароль">
+                <input for="changeParol" data-rule="newParol2" type="password" placeholder="Повторите новый пароль">
+                <input class="button" type="submit" value="Поменять пароль">
+            </form>
+        </div>
+
+   </div>
+</div>
