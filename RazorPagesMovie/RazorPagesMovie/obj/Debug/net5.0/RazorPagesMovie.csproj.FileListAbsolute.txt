@@ -97,3 +97,10 @@ C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPages
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\article.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\forum.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\library.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\account-articles.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\account-discussions.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\account-settings.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\account.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\discussion.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\new-discussion.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\signup.cshtml.g.cs

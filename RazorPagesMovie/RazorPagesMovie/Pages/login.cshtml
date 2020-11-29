@@ -3,17 +3,19 @@
 
 @{
     Layout = "Shared/_Layout";
+    ViewData["Title"] = "Главная";
 }
 
-        <main id="main">
-            <div class="main-block-login">
-                <div class="login-div">
-                    <form action="" class="form-add" onsubmit="return false;">
-                        <input data-rule="login" type="text" placeholder="Логин">
-                        <input data-rule="parol" type="password" placeholder="Пароль">
-                        <input class="button" type="submit" value="Войти">
-                    </form>
-                </div>
-                <a class="sign" href="signup.html">Зарегистрироваться</a>
-            </div>
-        </main>
+<main id="main">
+    <div class="main-block-login">
+        <div class="login-div">
+            <form action="" class="form-add" onsubmit="return false;">
+                <input data-rule="login" type="text" placeholder="Логин">
+                <input data-rule="parol" type="password" placeholder="Пароль">
+                <input class="button" type="submit" value="Войти">
+            </form>
+        </div>
+        <a class="sign" href="/signup">Зарегистрироваться</a>
+    </div>
+</main>
+<script src="/js/login.js"></script>

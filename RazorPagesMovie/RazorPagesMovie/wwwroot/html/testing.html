@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Эффект перекатывания</title>
+  <style>
+   a.rollover {
+    background: url(../favicon/Монтажная\ область\ 1\ копия.png); /* Путь к файлу с исходным рисунком  */
+    background-size: cover;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+   }
+   a.rollover:hover {
+    background-position: 0 -60px;
+    transition-duration: 0.5s;
+   }
+  </style>
+ </head>
+ <body>
+  <div><a href="#" class="rollover"></a></div>
+  </body>
+</html>

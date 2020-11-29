@@ -26,6 +26,6 @@ window.onload = function () {
 
         /* login */
 
-        document.location.href = 'account.html'
+        document.location.href = '/account'
     });
 }

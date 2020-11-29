@@ -2,19 +2,22 @@
 @model RazorPagesMovie.Pages.signup
 
 @{
-    Layout = null;
+    Layout = "Shared/_Layout";
+    ViewData["Title"] = "Главная";
+    
 }
 
 <main id="main">
-            <div class="main-block-login">
-                <div class="login-div">
-                    <form action="" class="form-add" onsubmit="return false;">
-                        <input data-rule="login" type="text" placeholder="Логин">
-                        <input data-rule="parol1" type="password" placeholder="Пароль">
-                        <input data-rule="parol2" type="password" placeholder="Повторите пароль">
-                        <input class="button" type="submit" value="Зарегистрироваться">
-                    </form>
-                </div>
-                <a class="sign" href="login.html">Уже есть аккаунт</a>
-            </div>
-        </main>
+    <div class="main-block-login">
+        <div class="login-div">
+            <form action="" class="form-add" onsubmit="return false;">
+                <input data-rule="login" type="text" placeholder="Логин">
+                <input data-rule="parol1" type="password" placeholder="Пароль">
+                <input data-rule="parol2" type="password" placeholder="Повторите пароль">
+                <input class="button" type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+        <a class="sign" href="/login">Уже есть аккаунт</a>
+    </div>
+</main>
+<script src="/js/signup.js"></script>

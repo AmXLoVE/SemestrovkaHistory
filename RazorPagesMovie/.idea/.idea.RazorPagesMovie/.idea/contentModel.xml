@@ -87,7 +87,22 @@
             <e p="site.webmanifest" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
-          <e p="html" t="Include" />
+          <e p="html" t="Include">
+            <e p="about.html" t="Include" />
+            <e p="account-articles.html" t="Include" />
+            <e p="account-discussions.html" t="Include" />
+            <e p="account-settings.html" t="Include" />
+            <e p="account.html" t="Include" />
+            <e p="article.html" t="Include" />
+            <e p="discussion.html" t="Include" />
+            <e p="forum.html" t="Include" />
+            <e p="library.html" t="Include" />
+            <e p="login.html" t="Include" />
+            <e p="main.html" t="Include" />
+            <e p="new-discussion.html" t="Include" />
+            <e p="signup.html" t="Include" />
+            <e p="testing.html" t="Include" />
+          </e>
           <e p="images" t="Include">
             <e p="1.jpg" t="Include" />
             <e p="2.jpg" t="Include" />
