@@ -11,13 +11,11 @@
     <div class="main-block-discussion">
 
         <div class="discussion-div">
-            <div class="discussion-headline">Кто, если не Путин?</div>
+            <div class="discussion-headline">@discussion.Discussion.Name</div>
             <div class="discussion-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo consectetur autem, inventore nulla doloribus tempore iusto nobis cumque rem dignissimos? Numquam velit corporis minima repellendus? Corporis atque voluptates ducimus sit?
-                <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sunt odio debitis praesentium rerum eligendi nemo! Animi quod nisi explicabo, dolor laudantium, culpa fugit, soluta voluptates mollitia vitae deserunt numquam.
+                @discussion.Discussion.Description
             </div>
-            <div class="discussion-info">VovkaRussia777, 22.05.20</div>
+            <div class="discussion-info">@discussion.Discussion.PersonCreateName, @discussion.Discussion.TimeCreate.ToString("d")</div>
         </div>
 
         <div class="comments-div">
@@ -26,40 +24,15 @@
                 <textarea placeholder="Комментарий"></textarea>
                 <button class="add-comment" type="submit">Добавить комментарий</button>
             </form>
-
+            
             <div class="all-comments">
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
-                <div class="comment">
-                    <div class="comment-text">Реально круто! РОССИЯ ВПЕРЁД!!! Люблю историю и Путина!</div>
-                    <div class="comment-info">Patriarch, 07.12.20</div>
-                </div>
+                @foreach (var e in discussion.Comments)
+                {
+                    <div class="comment">
+                        <div class="comment-text">@e.MessageText</div>
+                        <div class="comment-info">@e.PersonName, @e.MessageDate.ToString("f")</div>
+                    </div>
+                }
             </div>
 
         </div>

@@ -11,12 +11,20 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Connection.cs" t="Include" />
+        <e p="DAO" t="Include">
+          <e p="Articles_DAO.cs" t="Include" />
+          <e p="books_DAO.cs" t="Include" />
+          <e p="comments_DAO.cs" t="Include" />
+          <e p="forum_DAO.cs" t="Include" />
+          <e p="Users_DAO.cs" t="Include" />
+        </e>
         <e p="Model" t="Include">
           <e p="Articles.cs" t="Include" />
           <e p="books.cs" t="Include" />
-          <e p="discussions.cs" t="Include" />
+          <e p="Comments.cs" t="Include" />
           <e p="forum.cs" t="Include" />
-          <e p="Users.cs" t="Include" />
+          <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

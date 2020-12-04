@@ -10,15 +10,16 @@
     <div class="main-block-article">
 
         <div class="article-info">
-            <div class="article-headline">FAQ: Великое княжество Литовское. 200 лет неизвестной истории</div>
-            <div class="article-image" style="background-image: url(../images/1.jpg);"></div>
+            <div class="article-headline">@article.articles.Description</div>
+            <div class="article-image" style="background-image: url(@article.articles.Image);"></div>
             <div class="article-info-footer">
                 <div>
-                    <div class="article-data">Дата публикации: 09.11.20</div>
+                    <div class="article-data">Дата публикации: @article.articles.DateCreate.Day.@article.articles.DateCreate.Month.@article.articles.DateCreate.Year</div>
                     <div class="article-keywordlist">
-                        <div class="article-keyword">Литва</div>
-                        <div class="article-keyword">14 век</div>
-                        <div class="article-keyword">Великое княжество Литовское</div>
+                        @foreach (var str in @article.articles.Keywords.Split(','))
+                        {
+                            <div class="article-keyword">@str</div>
+                        }
                     </div>
                 </div>
                 <div class="like-button">
@@ -28,9 +29,7 @@
         </div>
 
         <div class="article-text">
-            На 13 века большинство племен от Эстонии до польского Поморья находились под властью государств крестоносцев: Ливонского ордена (современные Латвия и Эстония) и Тевтонского ордена (современное Поморье). В планах крестоносцев прибалтийские племена рассматривались исключительно как рабочая сила. Альтернативой могло быть физическое уничтожение непокорных, что и произошло с племенем пруссов. Поводом для захвата этих земель крестоносцами было то, что почти все балтийские племена были язычниками. 
-            <br>
-            Перспектива попасть под власть орденов не привлекала группу литовских племен — аукштайты, жемайтов или жмудь, ятвягов и куршей. Они смогли сохранить свою свободу и основать в первой половине 13 века собственное государство — Литовское княжество со столицей в городе Новогрудок. Первым великим князем стал Миндовг, которого 1251 папа Иннокентий IV короновал как христианского короля. 1316 великим князем стал Гедимин, который начал династию Гедиминовичей, потомки которой, включая другими ветвями династии, правивших княжеством до Люблинской унии с Польшей 1569.
+            @article.articles.Text
         </div>
 
     </div>

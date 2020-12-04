@@ -1,10 +1,13 @@
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.Linq;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Npgsql;
 using NpgsqlTypes;
+using RazorPagesMovie.Model;
 
 namespace RazorPagesMovie
 {
@@ -12,8 +15,6 @@ namespace RazorPagesMovie
     {
         public static void Main(string[] args)
         {
-            var connection = new NpgsqlConnection {ConnectionString = ConfigurationManager.ConnectionStrings["history"].ConnectionString};
-            connection.Open();
             CreateHostBuilder(args).Build().Run();
         }
 

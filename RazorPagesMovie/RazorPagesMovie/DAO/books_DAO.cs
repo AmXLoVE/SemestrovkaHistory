@@ -1,6 +1,6 @@
 ﻿namespace RazorPagesMovie.Model
 {
-    public class discussions
+    public class BooksDAO
     {
         
     }

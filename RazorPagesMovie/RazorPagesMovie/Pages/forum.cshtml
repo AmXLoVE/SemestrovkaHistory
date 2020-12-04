@@ -10,90 +10,21 @@
     <div class="main-block-forum">
         <div class="forum-header">
             <div class="forum-headline">Обсуждения</div>
-            <div><a href="new-discussion.html"><button class="add-discussion">Создать</button></a></div>
+            <div><a href="/new-discussion"><button class="add-discussion">Создать</button></a></div>
         </div>
         <div class="forum-discussions">
-
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
+            @foreach (var e in forum._list)
+            {
+                <a href="/discussion?open=@e.DiscussionId" class="forum-discussion-item">
+                    <div class="forum-discussion-container">
+                        <div class="forum-discussion-headline">@e.Name</div>
+                        <div class="forum-discussion-text">
+                            @e.Description
+                        </div>
+                        <div class="form-discussion-info">@e.PersonCreateName, @e.TimeCreate.ToString("d")</div>
                     </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                    </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                    </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                    </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                    </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                    </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                    </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
-            <a href="discussion.html" class="forum-discussion-item">
-                <div class="forum-discussion-container">
-                    <div class="forum-discussion-headline">Кто, если не Путин?</div>
-                    <div class="forum-discussion-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-                    </div>
-                    <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-                </div>
-            </a>
-                    
+                </a>
+            }
         </div>
     </div>
 </main>
