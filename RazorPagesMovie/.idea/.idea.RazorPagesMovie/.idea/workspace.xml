@@ -23,38 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd8abb73-9176-4906-92f9-d4a371475ded" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RazorPagesMovie/Model/Comments.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RazorPagesMovie/Model/Forum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RazorPagesMovie/Model/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Model/Articles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Model/Articles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Model/Users.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Model/books.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Model/books.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Model/discussions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Model/forum.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/Index.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/Index.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/article.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/article.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/discussion.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/discussion.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/forum.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/forum.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/library.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/library.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.pdb" afterDir="false" />
     </list>
@@ -209,6 +184,7 @@
       <workItem from="1606551178204" duration="5548000" />
       <workItem from="1606557681975" duration="7175000" />
       <workItem from="1606731938674" duration="36361000" />
+      <workItem from="1607076456742" duration="1163000" />
     </task>
     <servers />
   </component>
