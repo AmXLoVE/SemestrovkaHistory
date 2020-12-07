@@ -10,8 +10,8 @@ namespace RazorPagesMovie.Model
         [BindProperty] public DateTime TimeCreate { get; set; }
         [BindProperty] public string Name { get; set; }
         [BindProperty] public string Description { get; set; }
-        [BindProperty] public string PersonCreateName { get; set; }
-        [BindProperty] public int PersonCreateId { get; set; }
+        [BindProperty] public string PersonCreateLogin { get; set; }
+
         public Discussion()
         {
             

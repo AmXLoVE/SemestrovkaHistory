@@ -8,12 +8,19 @@
 
 <main id="main">
     <div class="main-block-forum">
-        <div class="forum-header">
-            <div class="forum-headline">Обсуждения</div>
-            <div><a href="/new-discussion"><button class="add-discussion">Создать</button></a></div>
-        </div>
+        @if (login.IsSession && login.LoginEqualsLoginSession())
+        {
+            <div class="forum-header">
+                <div class="forum-headline">Обсуждения</div>
+                <div><a href="/new-discussion"><button class="add-discussion">Создать</button></a></div>
+            </div>
+        }
+        else
+        {
+            <p style="text-align: center">Вы не можете создавать обсуждения, пока не выполните <a href="/login"><strong>Вход</strong></a></p>
+        }
         <div class="forum-discussions">
-            @foreach (var e in forum._list)
+            @foreach (var e in Model._list)
             {
                 <a href="/discussion?open=@e.DiscussionId" class="forum-discussion-item">
                     <div class="forum-discussion-container">
@@ -21,10 +28,20 @@
                         <div class="forum-discussion-text">
                             @e.Description
                         </div>
-                        <div class="form-discussion-info">@e.PersonCreateName, @e.TimeCreate.ToString("d")</div>
+                        <div class="form-discussion-info">@e.PersonCreateLogin, @e.TimeCreate.ToString("d")</div>
                     </div>
                 </a>
             }
         </div>
     </div>
 </main>
+
+@section Header
+{
+    
+}
+
+@section Footer
+{
+    <script src="/js/back-to-top.js"></script>
+}

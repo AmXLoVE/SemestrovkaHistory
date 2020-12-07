@@ -9,9 +9,6 @@ window.onload = function () {
         if (label.value.length < 1 || text.value.length < 1) {
             alert('Заполните все поля!');
             return;
-        }    
-
-        document.location.href = 'forum.html'
+        }
     })
-
 }

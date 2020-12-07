@@ -9,10 +9,19 @@
 <main id="main">
     <div class="main-block-forum">
         <div class="forum-headline">Создать обсуждение</div>
-        <form action="" class="discussion-form" onsubmit="return false;">
-            <input type="text" placeholder="Введите заголовок">
-            <textarea placeholder="Введите текст"></textarea>
+        <form method="post" class="discussion-form">
+            <input type="text" placeholder="Введите заголовок" asp-for="Name">
+            <textarea placeholder="Введите описание" asp-for="Description"></textarea>
             <div class="add"><button class="add-discussion" type="submit">Создать</button></div>
         </form>
     </div>
 </main>
+@section Header
+{
+    <script src="/js/add-discussion.js"></script>
+}
+
+@section Footer
+{
+    
+}

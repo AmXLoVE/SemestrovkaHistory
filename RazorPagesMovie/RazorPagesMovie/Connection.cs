@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System.Collections.Generic;
+using System.Configuration;
 using Npgsql;
 
 namespace RazorPagesMovie
@@ -20,13 +21,17 @@ namespace RazorPagesMovie
             connection.Close();
         }
 
-        public static int SendCommandWithoutAnswer(this NpgsqlConnection connection, string command)
+        public static int SendCommandWithoutAnswer(this NpgsqlConnection connection, string command, List<NpgsqlParameter> list)
         {
             var c = new NpgsqlCommand(command, connection);
+            foreach (var e in list)
+            {
+                c.Parameters.Add(e);
+            }
             return c.ExecuteNonQuery();
         }
 
-        public static NpgsqlDataReader GetDataFromDb(NpgsqlConnection connection, string command)
+        public static NpgsqlDataReader GetDataFromDb(this NpgsqlConnection connection, string command)
         {
             var c = new NpgsqlCommand(command, connection);
             return c.ExecuteReader();

@@ -3,10 +3,6 @@ window.onload = function () {
     const form = document.getElementsByClassName('form-add')[0];
     const inputs = document.querySelectorAll('input[data-rule]');
 
-    for (let inp of inputs){
-        inp.value = "";
-    }
-    
     form.addEventListener('submit', (e) => {
         let check = true;
         for (let inp of inputs) {
@@ -16,16 +12,9 @@ window.onload = function () {
             }
         }
         if (!check) {
-            alert ('Заполните все поля!');
-            return;
+            alert('Заполните все поля!');
+            return false;
         }
-
-        /*
-        allert ('Неверный логин или пароль')
-        */
-
-        /* login */
-
-        document.location.href = '/account'
+        return true;
     });
 }

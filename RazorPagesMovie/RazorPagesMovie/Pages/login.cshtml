@@ -9,13 +9,23 @@
 <main id="main">
     <div class="main-block-login">
         <div class="login-div">
-            <form action="" class="form-add" onsubmit="return false;">
-                <input data-rule="login" type="text" placeholder="Логин">
-                <input data-rule="parol" type="password" placeholder="Пароль">
+            <form method="POST" class="form-add" onsubmit="">
+                <input data-rule="login" type="text" placeholder="Логин" asp-for="Login" value="@Model.Login">
+                <input data-rule="parol" type="password" placeholder="Пароль" asp-for="Password" value="@Model.Password">
+                <p><input class="button" type="checkbox" asp-for="ZapomnitMenya">Запомнить меня</p>
                 <input class="button" type="submit" value="Войти">
             </form>
         </div>
         <a class="sign" href="/signup">Зарегистрироваться</a>
     </div>
+    <p>@ViewData["error"]</p>
 </main>
-<script src="/js/login.js"></script>
+@section Header
+{
+    <script src="/js/login.js"></script>
+}
+
+@section Footer
+{
+    
+}

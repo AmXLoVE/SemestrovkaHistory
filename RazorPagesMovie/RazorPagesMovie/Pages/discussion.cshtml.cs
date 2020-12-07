@@ -1,22 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Npgsql;
 using RazorPagesMovie.Model;
 
 namespace RazorPagesMovie.Pages
 {
     public class discussion : PageModel
     {
-        public static int Id { get; set; }
-        public static Discussion Discussion;
-        public static List<Comments> Comments;
-        
+        public int Id { get; private set; }
+        public Discussion Discussion;
+        public List<Comments> Comments;
+        [BindProperty] public string Comment { get; set; }
+
         public void OnGet()
         {
             var connection = Connection.Open();
             Id = int.Parse(HttpContext.Request.Query["open"]);
-            var reader = Connection.GetDataFromDb(connection, @"SELECT person_create_id, time_create,
- forum.name, description, discussion_id, users.name FROM FORUM inner JOIN users on
-            forum.person_create_id = users.person_id WHERE discussion_id = '" + Id + "'");
+            var reader = Connection.GetDataFromDb(connection, $@"SELECT * FROM FORUM WHERE discussion_id = '{Id}'");
             if (reader.Read())
                 Discussion = ForumDAO.MadeNewDiscussionObject(reader, connection);
             reader.Close();
@@ -27,6 +30,18 @@ namespace RazorPagesMovie.Pages
                 Comments.Add(CommentsDAO.MadeNewCommentObject(reader, connection));
             }
             connection.Close();
+        }
+
+        public void OnPost()
+        {
+            OnGet();
+            if (Comment == null || Comment.Length <= 0) return;
+            var connection = Connection.Open();
+            var messageTextParam = new NpgsqlParameter("@comment", Comment) {Direction = ParameterDirection.Input};
+            var command =
+                $@"INSERT INTO DISCUSSIONS VALUES (@comment, '{DateTime.Now:g}', '{Id}', '{login.Staticlogin}')";
+            connection.SendCommandWithoutAnswer(command, new List<NpgsqlParameter>() {messageTextParam});
+            Response.Redirect($@"/discussion?open={Id}");
         }
     }
 }

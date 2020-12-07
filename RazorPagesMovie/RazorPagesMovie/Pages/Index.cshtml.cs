@@ -11,7 +11,7 @@ namespace RazorPagesMovie.Pages
 {
     public class IndexModel : PageModel
     {
-        public static List<Articles> _list;
+        public List<Articles> _list;
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)

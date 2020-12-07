@@ -7,7 +7,7 @@ namespace RazorPagesMovie.Pages
 {
     public class forum : PageModel
     {
-        public static List<Discussion> _list;
+        public List<Discussion> _list;
         
         public void OnGet()
         {

@@ -15,28 +15,24 @@ namespace RazorPagesMovie.Model
         public static NpgsqlDataReader GetAllComments(int id, NpgsqlConnection connection)
         {
             return Connection.GetDataFromDb(connection,
-                "SELECT DISCUSSIONS.PERSON_ID, MESSAGE_TEXT, MESSAGE_DATE, DISCUSSION_ID, USERS.LOGIN FROM DISCUSSIONS INNER JOIN USERS ON DISCUSSIONS.PERSON_ID = USERS.PERSON_ID WHERE DISCUSSION_ID = '" +
-                id + "'");
+                $@"SELECT MESSAGE_TEXT, MESSAGE_DATE, DISCUSSION_ID, person_login FROM DISCUSSIONS WHERE DISCUSSION_ID = '{id}' ORDER BY MESSAGE_DATE");
         }
 
         public static Comments MadeNewCommentObject(NpgsqlDataReader reader, NpgsqlConnection connection)
         {
             var newComment = new Comments();
-            var str = "";
+            var a = new string[reader.FieldCount];
             for (var i = 0; i < reader.FieldCount; i++)
             {
-                str += reader.GetValue(i) + ",";
+                a[i] = reader.GetValue(i).ToString();
             }
-
-            str = str.Remove(str.Length - 1, 1);
-            var a = str.Split(',');
-            newComment.PersonId = int.Parse(a[0]);
-            newComment.MessageText = a[1];
-            var s = a[2].Split('.', ' ', ':');
+            
+            newComment.MessageText = a[0];
+            var s = a[1].Split('.', ' ', ':');
             var d = s.Select(int.Parse).ToArray();
             newComment.MessageDate = new DateTime(d[2], d[1], d[0], d[3], d[4], d[5]);
-            newComment.DiscussionId = int.Parse(a[3]);
-            newComment.PersonName = a[4];
+            newComment.DiscussionId = int.Parse(a[2]);
+            newComment.PersonName = a[3];
             return newComment;
         }
     }

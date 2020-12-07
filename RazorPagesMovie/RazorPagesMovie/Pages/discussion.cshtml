@@ -7,36 +7,49 @@
 }
 
 <main id="main">
-
     <div class="main-block-discussion">
-
-        <div class="discussion-div">
-            <div class="discussion-headline">@discussion.Discussion.Name</div>
-            <div class="discussion-text">
-                @discussion.Discussion.Description
+        
+            <div class="discussion-div">
+                <div class="discussion-headline">@Model.Discussion.Name</div>
+                <div class="discussion-text">
+                    @Model.Discussion.Description
+                </div>
+                <div class="discussion-info">@Model.Discussion.PersonCreateLogin, @Model.Discussion.TimeCreate.ToString("d")</div>
             </div>
-            <div class="discussion-info">@discussion.Discussion.PersonCreateName, @discussion.Discussion.TimeCreate.ToString("d")</div>
-        </div>
 
-        <div class="comments-div">
-
-            <form action="" class="comment-form">
-                <textarea placeholder="Комментарий"></textarea>
-                <button class="add-comment" type="submit">Добавить комментарий</button>
-            </form>
-            
-            <div class="all-comments">
-                @foreach (var e in discussion.Comments)
+            <div class="comments-div">
+                @if (login.IsSession && login.LoginEqualsLoginSession())
                 {
-                    <div class="comment">
-                        <div class="comment-text">@e.MessageText</div>
-                        <div class="comment-info">@e.PersonName, @e.MessageDate.ToString("f")</div>
-                    </div>
+                    <form method="post" class="comment-form">
+                        <textarea placeholder="Комментарий" asp-for="Comment"></textarea>
+                        <button class="add-comment" type="submit">Добавить комментарий</button>
+                    </form>
                 }
-            </div>
+                else
+                {
+                    <p style="align-content: center">Вам нужно <a asp-page="/login"><strong>Войти</strong></a>, чтобы добавлять комментарии к данному обсуждению.</p>
+                }
 
-        </div>
+                <div class="all-comments">
+                    @foreach (var e in Model.Comments)
+                    {
+                        <div class="comment">
+                            <div class="comment-text">@e.MessageText</div>
+                            <div class="comment-info">@e.PersonName, @e.MessageDate.ToString("f")</div>
+                        </div>
+                    }
+                </div>
+
+            </div>
+        
 
     </div>
+    </main>
 
-</main>
+@section Header {
+    <script src="/js/add-comment.js"></script>
+}
+
+@section Footer{
+    <script src="/js/back-to-top.js"></script>
+}

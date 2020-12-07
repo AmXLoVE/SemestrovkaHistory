@@ -70,25 +70,24 @@ window.onload = function () {
         }
         if (!check) {
             alert ('Заполните все поля!');
-            return;
+            return false;
         }
         if (!loginIsCorrect) {
             alert ('Логин должен сожержать минимум 3 символа и состоять только из букв!');
-            return;
+            return false;
         }
         if (!parolIsCorrect) {
             alert ('Пароль слишком пройстой!\nОн должен состоять минимум из 6 символов\nи содержать минимум одну цифру, одну заглавную и одну строчную буквы.');
-            return;
+            return false;
         }
         if (!parolsAreEqual) {
             alert ('Пароли не совпадают!');
-            return;
+            return false;
         }
 
         /* проверка на бэке */
 
         /* signup */
-
-        document.location.href = '/account'
+        return true;
     });
 }

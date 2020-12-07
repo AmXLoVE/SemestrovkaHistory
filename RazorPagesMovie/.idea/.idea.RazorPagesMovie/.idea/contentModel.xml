@@ -51,6 +51,7 @@
           <e p="article.cshtml.cs" t="Include" />
           <e p="discussion.cshtml" t="Include" />
           <e p="discussion.cshtml.cs" t="Include" />
+          <e p="ErrorViewComponent.cs" t="Include" />
           <e p="forum.cshtml" t="Include" />
           <e p="forum.cshtml.cs" t="Include" />
           <e p="Index.cshtml" t="Include" />
@@ -134,6 +135,7 @@
             <e p="login.js" t="Include" />
             <e p="signup.js" t="Include" />
             <e p="site.js" t="Include" />
+            <e p="UnloadWindow.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">

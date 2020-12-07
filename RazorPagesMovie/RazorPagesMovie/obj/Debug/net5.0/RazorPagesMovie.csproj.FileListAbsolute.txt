@@ -104,3 +104,5 @@ C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPages
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\discussion.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\new-discussion.cshtml.g.cs
 C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\obj\Debug\net5.0\Razor\Pages\signup.cshtml.g.cs
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\bin\Debug\net5.0\Scrypt.dll
+C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\bin\Debug\net5.0\CryptSharp.dll

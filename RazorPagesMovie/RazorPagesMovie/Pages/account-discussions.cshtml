@@ -2,7 +2,7 @@
 @model RazorPagesMovie.Pages.account_discussions
 
 @{
-    Layout = "Shared/_Layout";
+    Layout = null;
     ViewData["Title"] = "Главная";
 }
 
@@ -20,54 +20,24 @@
 
 <div class="account-discussions">
 
-    <a href="discussion.html" class="forum-discussion-item">
-        <div class="forum-discussion-container">
-            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-            <div class="forum-discussion-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-            </div>
-            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-        </div>
-    </a>
-    
-    <a href="discussion.html" class="forum-discussion-item">
-        <div class="forum-discussion-container">
-            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-            <div class="forum-discussion-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-            </div>
-            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-        </div>
-    </a>
-    
-    <a href="discussion.html" class="forum-discussion-item">
-        <div class="forum-discussion-container">
-            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-            <div class="forum-discussion-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-            </div>
-            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-        </div>
-    </a>
-    
-    <a href="discussion.html" class="forum-discussion-item">
-        <div class="forum-discussion-container">
-            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-            <div class="forum-discussion-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-            </div>
-            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-        </div>
-    </a>
-    
-    <a href="discussion.html" class="forum-discussion-item">
-        <div class="forum-discussion-container">
-            <div class="forum-discussion-headline">Кто, если не Путин?</div>
-            <div class="forum-discussion-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae, quidem, numquam corrupti atque incidunt aliquid, possimus laborum aspernatur velit quaerat quos aut voluptatum voluptatibus. Unde sed saepe repellendus placeat!
-            </div>
-            <div class="form-discussion-info">VovkaRussia777, 22.05.20</div>
-        </div>
-    </a>
+    @if (Model.discussions.Count > 0)
+    {
+        @foreach (var e in Model.discussions)
+        {
+            <a href="/discussion?open=@e.DiscussionId" class="forum-discussion-item">
+                <div class="forum-discussion-container">
+                    <div class="forum-discussion-headline">@e.Name</div>
+                    <div class="forum-discussion-text">
+                        @e.Description
+                    </div>
+                    <div class="form-discussion-info">@e.PersonCreateLogin, @e.TimeCreate.ToString("d")</div>
+                </div>
+            </a>
+        }
+    }
+    else
+    {
+        <p style="text-align: center">Вы еще не комментировали и не создавали обсуждения :(</p>
+    }
 
 </div>

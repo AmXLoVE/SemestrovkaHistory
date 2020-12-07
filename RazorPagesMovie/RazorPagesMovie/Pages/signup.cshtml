@@ -10,14 +10,24 @@
 <main id="main">
     <div class="main-block-login">
         <div class="login-div">
-            <form action="" class="form-add" onsubmit="return false;">
-                <input data-rule="login" type="text" placeholder="Логин">
-                <input data-rule="parol1" type="password" placeholder="Пароль">
-                <input data-rule="parol2" type="password" placeholder="Повторите пароль">
+            <form method="post" class="form-add">
+                <input data-rule="login" type="text" placeholder="Логин" asp-for="Login">
+                <input data-rule="parol1" type="password" placeholder="Пароль" asp-for="Password">
+                <input data-rule="parol2" type="password" placeholder="Повторите пароль" asp-for="ConfirmPassword">
                 <input class="button" type="submit" value="Зарегистрироваться">
             </form>
         </div>
         <a class="sign" href="/login">Уже есть аккаунт</a>
     </div>
+    <p>@ViewData["error"]</p>
 </main>
-<script src="/js/signup.js"></script>
+
+@section Header
+{
+    <script src="/js/signup.js"></script>
+}
+
+@section Footer
+{
+    
+}

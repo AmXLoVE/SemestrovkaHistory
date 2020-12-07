@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using RazorPagesMovie.Model;
 
 namespace RazorPagesMovie.Pages
 {
@@ -6,7 +9,7 @@ namespace RazorPagesMovie.Pages
     {
         public void OnGet()
         {
-            
+
         }
     }
 }

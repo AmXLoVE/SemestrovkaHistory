@@ -9,6 +9,5 @@ namespace RazorPagesMovie.Model
         [BindProperty] public string Password { get; set; }
         [BindProperty] public string SelectedArticlesId { get; set; }
         [BindProperty] public string Name { get; set; }
-        [BindProperty] public int PersonId { get; set; }
     }
 }
