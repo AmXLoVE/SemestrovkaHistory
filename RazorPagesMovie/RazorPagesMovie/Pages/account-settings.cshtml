@@ -1,9 +1,10 @@
 ﻿@page
+@using System.Net
 @model RazorPagesMovie.Pages.account_settings
 
 @{
     Layout = null;
-    ViewData["Title"] = "Главная";
+    ViewData["Title"] = "Настройки";
 }
 
 <nav class="account-nav">
@@ -19,37 +20,35 @@
 </nav>
 
 <div class="account-settings">
-   <div class="account-login"> @login.Staticlogin</div>
-   <div class="account-change">
+    <div class="account-login"> @login.Staticlogin</div>
+    <div class="account-change">
 
-       <div class="login-div">
-           <p style="text-align: center">@ViewData["loginError"]</p>
-           <form method="post" class="login-change" onsubmit="changeLogin();">
-               <input type="hidden" name="Action" value="changeLogin">
-               <input name="NewLogin" for="changeLogin" data-rule="newLogin" type="text" placeholder="Новый логин">
-               <input name="Password" for="changeLogin" data-rule="oldParol" type="password" placeholder="Подтвердите пароль">
-               <input class="button" type="submit" value="Поменять логин">
-           </form>
-       </div>
+        <div class="login-div">
+            <form method="post" class="login-change" onsubmit="changeLogin();">
+                <input type="hidden" name="Action" value="changeLogin">
+                <input name="NewLogin" for="changeLogin" data-rule="newLogin" type="text" placeholder="Новый логин">
+                <input name="Password" for="changeLogin" data-rule="oldParol" type="password" placeholder="Подтвердите пароль">
+                <input class="button" type="submit" value="Поменять логин">
+                <span ></span>
+            </form>
+        </div>
 
-       <div class="login-div">
-           <p style="text-align: center">@ViewData["passwordError"]</p>
-           <form method="post" class="parol-change" onsubmit="changeParol();">
-               <input type="hidden" name="Action" value="changeParol">
-               <input name="Password" for="changeParol" data-rule="oldParol" type="text" placeholder="Старый пароль">
-               <input name="NewPassword" for="changeParol" data-rule="newParol1" type="password" placeholder="Новый пароль">
-               <input name="ConfirmPassword" for="changeParol" data-rule="newParol2" type="password" placeholder="Повторите новый пароль">
-               <input class="button" type="submit" value="Поменять пароль">
-           </form>
-       </div>
+        <div class="login-div">
+            <form method="post" class="parol-change" onsubmit="changeParol();">
+                <input type="hidden" name="Action" value="changeParol">
+                <input name="Password" for="changeParol" data-rule="oldParol" type="text" placeholder="Старый пароль">
+                <input name="NewPassword" for="changeParol" data-rule="newParol1" type="password" placeholder="Новый пароль">
+                <input name="ConfirmPassword" for="changeParol" data-rule="newParol2" type="password" placeholder="Повторите новый пароль">
+                <input class="button" type="submit" value="Поменять пароль">
+            </form>
+        </div>
        
-       <p>
-       <form method="post">
-           <input type="hidden" name="Action" value="exit">
-           <button class="btn btn-danger" type="submit" asp-for="">Выйти</button>
-       </form>
-       <p style="text-align: center">
-           @await Component.InvokeAsync("Error", new {error = ViewBag["error"]})
-       </p>
-   </div>
+       
+        <form method="post">
+            <input type="hidden" name="Action" value="exit">
+            <button class="btn btn-danger" type="submit" asp-for="">Выйти</button>
+        </form>
+       
+    </div>
 </div>
+<p style="text-align: center">@account.Message</p>

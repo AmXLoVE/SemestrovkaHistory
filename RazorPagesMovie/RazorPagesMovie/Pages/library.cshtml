@@ -35,36 +35,19 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>История России</td>
-                        <td>Иванов И.И., Петров П.П.</td>
-                        <td>2010</td>
-                        <td>
-                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
-                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>История США</td>
-                        <td>Сидоров И.И., Петров П.П., Огурцов В.С., Помидоров К.С.</td>
-                        <td>2019</td>
-                        <td>
-                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
-                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>История Татарстана</td>
-                        <td>Огурцов В.С., Иванов П.П.</td>
-                        <td>2015</td>
-                        <td>
-                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf">Открыть</a>
-                            <a class="book" href="../pdf/246_2-istorija-rossii_-10kl_-baz_-ur_-v-2ch_-ch_2_levandovskij-a_a_2015-256s.pdf" download>Скачать</a>
-                        </td>
-                      </tr>
+                    @for(var i = 0; i < Model.books.Count; i++)
+                    {
+                        <tr>
+                            <th scope="row">@(i+1)</th>
+                            <td>@Model.books[i].Name</td>
+                            <td>@Model.books[i].Author</td>
+                            <td>@Model.books[i].WriteDate.ToString("d")</td>
+                            <td>
+                                <a class="book" href="@Model.books[i].Url">Открыть</a>
+                                <a class="book" href="@Model.books[i].Url" download>Скачать</a>
+                            </td>
+                        </tr>
+                    }
                     </tbody>
                   </table>
 

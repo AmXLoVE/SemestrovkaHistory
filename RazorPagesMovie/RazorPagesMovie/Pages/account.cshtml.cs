@@ -12,26 +12,27 @@ namespace RazorPagesMovie.Pages
         [BindProperty] public string Password { get; set; }
         [BindProperty] public string NewPassword { get; set; }
         [BindProperty] public string ConfirmPassword { get; set; }
+        [BindProperty] public static string Message { get; set; }
         
         public void OnGet()
         {
-            
+            Message = null;
         }
 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             if (!login.IsSession || !login.LoginEqualsLoginSession())
             {
                 Response.Redirect("/login");
                 login.Staticlogin = null;
                 login.IsSession = false;
-                return;
+                return Page();
             }
 
             if (NewLogin == login.Staticlogin && login.IsSession && login.LoginEqualsLoginSession())
             {
-                ViewBag["error"] = "Нельзя поменять логин на такой же";
-                return;
+                Message = "WARNING: Нельзя поменять логин на такой же";
+                return Page();
             }
 
             switch (Action)
@@ -42,8 +43,8 @@ namespace RazorPagesMovie.Pages
                     login.LoginSession = null;
                     break;
                 case "changeLogin" when !CheckLogin():
-                    ViewData["error"] = "Логин не должен содержать цифр\nи иметь длину от 3 до 20 символов.";
-                    return;
+                    Message = "WARNING: Логин не должен содержать цифр\nи иметь длину от 3 до 20 символов.";
+                    return Page();
                 case "changeLogin":
                 {
                     var connection = Connection.Open();
@@ -63,7 +64,7 @@ namespace RazorPagesMovie.Pages
                             login.IsSession = false;
                             login.Staticlogin = null;
                         }
-                        else ViewData["error"] = "Неверный пароль";
+                        else Message = "WARNING: Неверный пароль";
                     }
 
                     connection.Close();
@@ -71,7 +72,11 @@ namespace RazorPagesMovie.Pages
                 }
                 case "changeParol":
                 {
-                    if (Password == null || NewPassword == null || ConfirmPassword == null) return;
+                    if (Password == null || NewPassword == null || ConfirmPassword == null)
+                    {
+                        Message = "WARNING: Поля или одно из полей пустые";
+                        return Page();
+                    }
                     var connection = Connection.Open();
                     var reader = Connection.GetDataFromDb(connection,
                         $@"SELECT users.password FROM USERS WHERE '{login.Staticlogin}' = users.login");
@@ -92,14 +97,20 @@ namespace RazorPagesMovie.Pages
                                 login.IsSession = false;
                                 login.Staticlogin = null;
                             }
-                            else ViewData["error"] = "Пароли не совпадают";
+                            else
+                            {
+                                Message = "WARNING: Пароли не совпадают";
+                                return Page();
+                            }
                         }
-                        else ViewData["error"] = "Неверный пароль";
+                        else Message = "WARNING: Неверный пароль";
                     }
                     connection.Close();
                     break;
                 }
             }
+
+            return Page();
         }
         
         private bool CheckLogin()
