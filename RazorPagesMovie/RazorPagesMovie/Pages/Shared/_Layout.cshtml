@@ -11,9 +11,9 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#212121">
         <title>@ViewData["Title"]</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="/css/style.css">
         @RenderSection("Header", false)
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
         <script src="js/UnloadWindow.js"></script>
     </head>
     <body>
@@ -46,13 +46,6 @@
 
     @RenderBody()
     
-    <footer id="footer">
-        <div class="footer-block">
-            <div class="up">
-                <div class="rollover"></div>
-            </div>
-        </div>
-    </footer>
 
     @RenderSection("Footer", false)
     </body>

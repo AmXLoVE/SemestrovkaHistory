@@ -23,29 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd8abb73-9176-4906-92f9-d4a371475ded" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/about.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/about.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/account.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/account.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-articles.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-articles.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-discussions.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-discussions.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/signup.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/signup.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/net5.0/RazorPagesMovie.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/about.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/about.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/account.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/account.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/article.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/article.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/discussion.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/discussion.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/forum.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/forum.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/library.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/library.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/login.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/login.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/new-discussion.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/new-discussion.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/signup.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/Razor/Pages/signup.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/RazorPagesMovie.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/RazorPagesMovie.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/net5.0/RazorPagesMovie.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,45 +63,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2A8E2710-3352-437B-9F32-40E66860B727/13/StaticFileMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/157DAEEC-99DC-4104-8AC8-7A683908EF4A/88/b151b181/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE6EBD82-3AA1-4E66-A236-1EBD58431B5A/f8/58276a28/BitPacking.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE6EBD82-3AA1-4E66-A236-1EBD58431B5A/1e/1af70eb2/Check.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD23454A-9E1D-42F2-A7F1-877809219317/8D/HttpProtocol.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2AC94C5C-6477-413E-B0DB-4CA3F016DC69/1A/EndpointRoutingMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/44F163D4-620A-4A4D-996E-9A589244D4A9/14/NpgsqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61A3EED3-7CCB-4E76-8437-BF39AA789B64/19/HostingApplication.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3EE295E0-992F-4282-A8A7-D75CB9924BA1/A/PageHandlerPageFilter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE6EBD82-3AA1-4E66-A236-1EBD58431B5A/fc/d5d7b9ea/Pbkdf2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3EE295E0-992F-4282-A8A7-D75CB9924BA1/8/PageHandlerExecutedContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BDF580FD-00D9-4383-992C-BE4775824955/3/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3EE295E0-992F-4282-A8A7-D75CB9924BA1/19/PageModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3EE295E0-992F-4282-A8A7-D75CB9924BA1/2D/PageActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D48D4C72-8E33-42BB-8885-5FCE4ECFA5C4/81/ActionEndpointFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8245EF91-ECA6-46D4-A12F-E7FEDDC620E5/33/ResourceExecutedContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AB18C232-5992-41FF-BB12-E48FE55CBFDA/fd/f85466fd/ScryptEncoder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E1837C26-E970-472F-8774-B5FD8DCD50B7/11/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/77B2E864-81B8-4391-802A-42D913194124/1/HostFilteringMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6A880890-66CA-4F20-9EB7-68E593CB6D66/8/DiagnosticListener.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3EE295E0-992F-4282-A8A7-D75CB9924BA1/27/ExecutorFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9757743E-6B70-4FE9-848C-0ADFF83FCFC0/C/SessionMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/44F163D4-620A-4A4D-996E-9A589244D4A9/24/NpgsqlParameter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2AC94C5C-6477-413E-B0DB-4CA3F016DC69/17/EndpointMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3EE295E0-992F-4282-A8A7-D75CB9924BA1/14/MvcRazorPagesDiagnosticListenerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/39998991-865E-4B4B-AA1C-19A4B8E711F8/5/HttpsRedirectionMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FE6EBD82-3AA1-4E66-A236-1EBD58431B5A/a9/54fd3f98/SCrypt.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D48D4C72-8E33-42BB-8885-5FCE4ECFA5C4/133/ResourceInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/44F163D4-620A-4A4D-996E-9A589244D4A9/1B/NpgsqlDataReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/19C782C6-1BC0-4176-BA54-6699D47509CC/68/HMACSHA256.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Model/books.cs" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Model/discussions.cs" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Model/Users.cs" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/DAO/discussions_DAO.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Model/Articles.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Program.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Model/forum.cs" />
@@ -131,24 +95,28 @@
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/DAO/Users_DAO.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml.cs" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/ErrorViewComponent.cs" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-discussions.cshtml" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-articles.cshtml" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account.cshtml.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/DAO/books_DAO.cs" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/about.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account.cshtml" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/RazorPagesMovie.csproj" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/App.config" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Web.config" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/about.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/signup.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-articles.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-discussions.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/wwwroot/css/style.css" />
       </list>
     </option>
   </component>
@@ -165,6 +133,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.23242188" />
     <property name="settings.editor.selected.configurable" value="ReSpellerSettingsId" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RazorPagesMovie">
     <configuration name="RazorPagesMovie" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -223,12 +192,17 @@
       <workItem from="1607250275364" duration="43933000" />
       <workItem from="1607454847158" duration="4829000" />
       <workItem from="1607944878141" duration="526000" />
+      <workItem from="1607977535048" duration="169000" />
+      <workItem from="1607977889014" duration="957000" />
+      <workItem from="1607979361975" duration="7903000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -249,22 +223,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="543" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1607510015034" />
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1607945404196">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607987370537">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
-    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1607945404196">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607987370537" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607987370536">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
-    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1607945404196">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607987370536" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607987370536">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
-    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1607945404196">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607987370536" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607987370536">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607987370536" />
     <state width="1493" height="161" key="GridCell.Tab.1.bottom" timestamp="1607510947942">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -329,10 +307,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="161" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1607510947943" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1606819379693">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="402" y="246" key="SettingsEditor" timestamp="1607978256813">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606819379693" />
+    <state x="402" y="246" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607978256813" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1607362230423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -352,14 +331,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RazorPagesMovie/Pages/ErrorViewComponent.cs</url>
           <line>11</line>
-          <properties documentPath="C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\Pages\ErrorViewComponent.cs" initialLine="11">
-            <startOffsets>
-              <option value="314" />
-            </startOffsets>
-            <endOffsets>
-              <option value="396" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Allah\Desktop\Semestrovka\SemestrovkaHistory\RazorPagesMovie\RazorPagesMovie\Pages\ErrorViewComponent.cs" initialLine="11" />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>

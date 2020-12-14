@@ -16,7 +16,7 @@
                 <div>
                     <div class="article-data">Дата публикации: @Model.articles.DateCreate.ToString("d")</div>
                     <div class="article-keywordlist">
-                        @foreach (var str in @Model.articles.Keywords.Split(','))
+                        @foreach (var str in @Model.articles.Keywords.Split(';'))
                         {
                             <div class="article-keyword">@str</div> 
                         }
