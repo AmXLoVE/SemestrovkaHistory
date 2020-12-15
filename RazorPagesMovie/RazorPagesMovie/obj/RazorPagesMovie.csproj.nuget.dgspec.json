@@ -1,30 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
+    "C:\\KIRILL\\Programming\\GIT\\semwork 3 sem 2 course\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {
+    "C:\\KIRILL\\Programming\\GIT\\semwork 3 sem 2 course\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "projectUniqueName": "C:\\KIRILL\\Programming\\GIT\\semwork 3 sem 2 course\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
         "projectName": "RazorPagesMovie",
-        "projectPath": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
-        "packagesPath": "C:\\Users\\Allah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Allah\\Desktop\\Semestrovka\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
+        "projectPath": "C:\\KIRILL\\Programming\\GIT\\semwork 3 sem 2 course\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "packagesPath": "C:\\Users\\Кирилл\\.nuget\\packages\\",
+        "outputPath": "C:\\KIRILL\\Programming\\GIT\\semwork 3 sem 2 course\\SemestrovkaHistory\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Allah\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Кирилл\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "netcoreapp5.0",
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -35,8 +39,7 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "netcoreapp5.0",
+        "netcoreapp3.1": {
           "dependencies": {
             "CryptSharp": {
               "target": "Package",
@@ -77,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.8.20417.9\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
