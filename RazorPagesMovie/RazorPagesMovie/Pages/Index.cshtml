@@ -21,39 +21,26 @@
                                 <div class="filter-headline">Ключевые слова:</div> 
                                 <input id="search-keyword" type="text" placeholder="Найти">
                                 <div class="filter-keywordlist">
-                                    <div class="filter-keyword">
-                                        <input type="checkbox" id="1" value="Россия">
-                                        <label for="1">Россия</label>
-                                    </div>
-                                    <div class="filter-keyword">
-                                        <input type="checkbox" id="2" value="Америка">
-                                        <label for="2">Америка</label>
-                                    </div>
-                                    <div class="filter-keyword">
-                                        <input type="checkbox" id="3" value="Литва">
-                                        <label for="3">Литва</label>
-                                    </div>
-                                    <div class="filter-keyword">
-                                        <input type="checkbox" id="4" value="14 век">
-                                        <label for="4">14 век</label>
-                                    </div>
-                                    <div class="filter-keyword">
-                                        <input type="checkbox" id="5" value="Великое княжество Литовское">
-                                        <label for="5">Великое княжество Литовское</label>
-                                    </div>
+                                    @for (var i = 0; i < Model.Keywords.Count; i++)
+                                    {
+                                        <div class="filter-keyword">
+                                            <input type="checkbox" id="@(i + 1)" value="@Model.Keywords[i]">
+                                            <label for="@(i + 1)">@Model.Keywords[i]</label>
+                                        </div>
+                                    }
                                 </div>
                             </div>
                         </div>         
                     </div>
         
                     <div class="main-block">
-                        @foreach (var article in Model._list)
+                        @foreach (var article in Model.Articles)
                         {
-                            <a href="/article?open=@article.Id" class="post-item" style="background-image: url(@article.Image);" keywords="@article.Keywords">
+                            <a href="/article?open=@article.Id" class="post-item" style="background-image: url(@article.Image);" keywords="@article.KeywordsToString()">
                                 <div class="post-container">
                                     <div class="post-data">@article.DateCreate.ToString("d")</div>
-                                    <div class="post-headline">@article.Description</div>
-                                    <div class="post-keyword">@article.Name.Split(',')[0]</div>
+                                    <div class="post-headline">@article.Name</div>
+                                    <div class="post-keyword">@article.Keywords[0]</div>
                                 </div>
                             </a>
                         }

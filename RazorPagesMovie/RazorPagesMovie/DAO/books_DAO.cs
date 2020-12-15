@@ -14,7 +14,7 @@ namespace RazorPagesMovie.Model
             while(reader.Read())
             {
                 var str = new string[reader.FieldCount];
-                for (int i = 0; i < reader.FieldCount; i++)
+                for (var i = 0; i < reader.FieldCount; i++)
                 {
                     str[i] = reader.GetValue(i).ToString();
                 }

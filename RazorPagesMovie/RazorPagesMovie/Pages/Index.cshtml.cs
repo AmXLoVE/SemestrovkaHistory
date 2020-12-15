@@ -11,7 +11,8 @@ namespace RazorPagesMovie.Pages
 {
     public class IndexModel : PageModel
     {
-        public List<Articles> _list;
+        public List<Articles> Articles;
+        public List<string> Keywords;
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -22,12 +23,8 @@ namespace RazorPagesMovie.Pages
         public void OnGet()
         {
             var connection = Connection.Open();
-            var reader = ArticlesDAO.GetAllArticles(connection);
-            _list = new List<Articles>();
-            while(reader.Read())
-            {
-                _list.Add(ArticlesDAO.MadeNewArticleObject(reader));
-            }
+            Articles = ArticlesDAO.GetAllArticles(connection);
+            Keywords = ArticlesDAO.MakeNewListOfKeys(connection);
             connection.Close();
         }
     }

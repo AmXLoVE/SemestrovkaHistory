@@ -24,7 +24,11 @@ namespace RazorPagesMovie.Pages
 
         public void OnPost()
         {
-            if (!UsersDAO.CheckLogin(Login) || !UsersDAO.CheckPassword(Password)) return;
+            if (!UsersDAO.CheckLogin(Login) || !UsersDAO.CheckPassword(Password))
+            {
+                ViewData["error"] = "Неверно заполненное поле или несколько полей.";
+                return;
+            }
             var connection = Connection.Open();
             if (Password.Equals(ConfirmPassword))
             {

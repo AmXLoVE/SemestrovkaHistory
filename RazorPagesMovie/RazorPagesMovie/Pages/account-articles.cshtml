@@ -27,8 +27,8 @@
             <a href="/article?open=@article.Id" class="post-item" style="background-image: url(@article.Image);" keywords="@article.Keywords">
                 <div class="post-container">
                     <div class="post-data">@article.DateCreate.ToString("d")</div>
-                    <div class="post-headline">@article.Description</div>
-                    <div class="post-keyword">@article.Name.Split(',')[0]</div>
+                    <div class="post-headline">@article.Name</div>
+                    <div class="post-keyword">@article.Keywords[0]</div>
                 </div>
             </a>
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -9,7 +10,7 @@ namespace RazorPagesMovie.Pages
 {
     public class article : PageModel
     {
-        public int Id { get; set; }
+        private int Id { get; set; }
         public Articles articles;
         public bool IsSelected { get; set; }
 
@@ -17,10 +18,13 @@ namespace RazorPagesMovie.Pages
         {
             var connection = Connection.Open();
             Id = int.Parse(HttpContext.Request.Query["open"]);
-            var reader = Connection.GetDataFromDb(connection, "SELECT * FROM ARTICLES WHERE id = '" + Id + "'");
-            if(reader.Read())
-                articles = ArticlesDAO.MadeNewArticleObject(reader);
-            reader.Close();
+            articles = ArticlesDAO.GetArticleFromDb(connection, Id);
+            if(articles.Name == null)
+            {
+                articles = new Articles("", "", new List<string>() {""}, DateTime.Now, "", Id);
+                Response.Redirect("/index");
+                return;
+            }
             var a = UsersDAO.GetSelectedArticles(login.LoginSession, connection);
             var str = SelectedArticlesToString(a);
             if(str.Length > 0)

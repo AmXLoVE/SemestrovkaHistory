@@ -42,8 +42,8 @@ namespace RazorPagesMovie.Pages
                     login.IsSession = false;
                     login.LoginSession = null;
                     break;
-                case "changeLogin" when !CheckLogin():
-                    Message = "WARNING: Логин не должен содержать цифр\nи иметь длину от 3 до 20 символов.";
+                case "changeLogin" when !CheckLoginAndPassword():
+                    Message = "WARNING: Логин не должен содержать цифр и иметь длину от 3 до 20 символов.";
                     return Page();
                 case "changeLogin":
                 {
@@ -113,9 +113,9 @@ namespace RazorPagesMovie.Pages
             return Page();
         }
         
-        private bool CheckLogin()
+        private bool CheckLoginAndPassword()
         {
-            return NewLogin != null && UsersDAO.CheckLogin(NewLogin);
+            return NewLogin != null && Password != null && UsersDAO.CheckLogin(NewLogin);
         }
     }
 }

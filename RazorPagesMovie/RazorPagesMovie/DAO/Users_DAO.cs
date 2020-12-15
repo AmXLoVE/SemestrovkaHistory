@@ -91,12 +91,12 @@ namespace RazorPagesMovie.Model
 
         public static bool CheckLogin(string login)
         {
-            return new Regex(@"^[a-zA-Z]{3,20}$").IsMatch(login);
+            return login != null && new Regex(@"^[a-zA-Z]{3,20}$").IsMatch(login);
         }
 
         public static bool CheckPassword(string password)
         {
-            return new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$").IsMatch(password);
+            return password != null && new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$").IsMatch(password);
         }
 
         public static string ChangeLogin(NpgsqlConnection connection, string newLogin)

@@ -10,13 +10,13 @@
     <div class="main-block-article">
 
         <div class="article-info">
-            <div class="article-headline">@Model.articles.Description</div>
+            <div class="article-headline">@Model.articles.Name</div>
             <div class="article-image" style="background-image: url(@Model.articles.Image);"></div>
             <div class="article-info-footer">
                 <div>
                     <div class="article-data">Дата публикации: @Model.articles.DateCreate.ToString("d")</div>
                     <div class="article-keywordlist">
-                        @foreach (var str in @Model.articles.Keywords.Split(','))
+                        @foreach (var str in @Model.articles.Keywords)
                         {
                             <div class="article-keyword">@str</div> 
                         }
