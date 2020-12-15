@@ -22,7 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd8abb73-9176-4906-92f9-d4a371475ded" name="Default Changelist" comment="" />
+    <list default="true" id="dd8abb73-9176-4906-92f9-d4a371475ded" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../HTML Coding/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML Coding/images/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HTML Coding/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML Coding/images/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HTML Coding/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML Coding/images/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HTML Coding/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML Coding/images/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HTML Coding/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML Coding/images/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/wwwroot/images/5.jpg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,8 +93,6 @@
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/RazorPagesMovie.csproj" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/App.config" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/Web.config" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/about.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/forum.cshtml" />
@@ -93,6 +105,8 @@
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-discussions.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/library.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/wwwroot/css/style.css" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/Web.config" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/App.config" />
       </list>
     </option>
   </component>
@@ -170,7 +184,8 @@
       <workItem from="1607944878141" duration="526000" />
       <workItem from="1607977535048" duration="169000" />
       <workItem from="1607977889014" duration="957000" />
-      <workItem from="1607979361975" duration="8213000" />
+      <workItem from="1607979361975" duration="8377000" />
+      <workItem from="1608025833679" duration="255000" />
     </task>
     <servers />
   </component>
@@ -199,26 +214,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="543" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1607510015034" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607987574412">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607988043643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607987574412" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607987574412">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607988043643" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607988043643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607987574412" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607987574412">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607988043643" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607988043643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607987574412" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607987574412">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607988043643" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607988043643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607945404196" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607987574412" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607988043643" />
     <state width="1493" height="161" key="GridCell.Tab.1.bottom" timestamp="1607510947942">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
