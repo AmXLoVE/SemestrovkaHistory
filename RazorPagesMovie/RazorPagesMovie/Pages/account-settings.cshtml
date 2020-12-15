@@ -21,6 +21,12 @@
 
 <div class="account-settings">
     <div class="account-login"> @login.Staticlogin</div>
+    
+    <form method="post">
+        <input type="hidden" name="Action" value="exit">
+        <button class="button button-right" type="submit" asp-for="">Выйти</button>
+    </form>
+    
     <div class="account-change">
 
         <div class="login-div">
@@ -42,13 +48,7 @@
                 <input class="button" type="submit" value="Поменять пароль">
             </form>
         </div>
-       
-       
-        <form method="post">
-            <input type="hidden" name="Action" value="exit">
-            <button class="btn btn-danger" type="submit" asp-for="">Выйти</button>
-        </form>
-       
+
     </div>
 </div>
 <p style="text-align: center">@account.Message</p>

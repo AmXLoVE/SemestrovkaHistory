@@ -12,13 +12,18 @@
             <form method="POST" class="form-add" onsubmit="">
                 <input data-rule="login" type="text" placeholder="Логин" asp-for="Login" value="@Model.Login">
                 <input data-rule="parol" type="password" placeholder="Пароль" asp-for="Password" value="@Model.Password">
-                <p><input class="button" type="checkbox" asp-for="ZapomnitMenya">Запомнить меня</p>
+                <div class="remember-checkbox">
+                    <input type="checkbox" id="remember" asp-for="ZapomnitMenya">
+                    <label for="remember">Запомнить меня</label>
+                </div>
                 <input class="button" type="submit" value="Войти">
             </form>
         </div>
         <a class="sign" href="/signup">Зарегистрироваться</a>
+        
+        <p class="error-message">@ViewData["error"]</p>
     </div>
-    <p>@ViewData["error"]</p>
+    
 </main>
 @section Header
 {

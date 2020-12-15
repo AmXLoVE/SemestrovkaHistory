@@ -17,8 +17,11 @@
         }
         else
         {
-            <p style="text-align: center">Вы не можете создавать обсуждения, пока не выполните <a href="/login"><strong>Вход</strong></a></p>
+            <div class="login-message">
+                <div>Вы не можете создавать обсуждения, пока не выполните <a href="/login">вход</a></div>
+            </div>
         }
+
         <div class="forum-discussions">
             @foreach (var e in Model._list)
             {
