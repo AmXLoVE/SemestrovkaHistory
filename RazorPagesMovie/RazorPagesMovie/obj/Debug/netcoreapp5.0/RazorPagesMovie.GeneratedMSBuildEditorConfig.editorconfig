@@ -1,0 +1,3 @@
+is_global = true
+build_property.TargetFramework = netcoreapp5.0
+build_property.TargetPlatformMinVersion =

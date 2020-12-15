@@ -30,22 +30,7 @@ namespace RazorPagesMovie.Model
             }
             newArticles.Name = a[0];
             newArticles.Image = a[1];
-            var keywords = new List<string>();
-            foreach (var key in a[2].Split(';'))
-            {
-                if (key.Length <= 0) continue;
-                var newKey = key;
-                while (newKey[0] == ' ')
-                {
-                    newKey = newKey.Remove(0, 1);
-                }
-
-                while (newKey[^1] == ' ')
-                {
-                    newKey = newKey.Remove(newKey.Length - 1, 1);
-                }
-                keywords.Add(newKey);
-            }
+            var keywords = (from key in a[2].Split(';') where key.Length > 0 select key.Trim()).ToList();
             newArticles.Keywords = keywords;
             var s = a[3].Split('.', ' ', ':');
             var d = s.Select(int.Parse).ToArray();
@@ -66,17 +51,7 @@ namespace RazorPagesMovie.Model
                 foreach (var key in str.Split(';'))
                 {
                     if (key.Length <= 0) continue;
-                    var newKey = key;
-                    while (newKey[0] == ' ')
-                    {
-                        newKey = newKey.Remove(0, 1);
-                    }
-
-                    while (newKey[^1] == ' ')
-                    {
-                        newKey = newKey.Remove(newKey.Length - 1, 1);
-                    }
-
+                    var newKey = key.Trim();
                     if (IsKeyContainInList(list, newKey) && newKey.Length > 0)
                         list.Add(newKey);
                 }
