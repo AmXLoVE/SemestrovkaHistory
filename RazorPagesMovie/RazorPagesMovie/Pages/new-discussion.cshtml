@@ -14,6 +14,13 @@
             <textarea placeholder="Введите описание" asp-for="Description"></textarea>
             <div class="add"><button class="add-discussion" type="submit">Создать</button></div>
         </form>
+        @if (@Model.Message != null)
+        {
+            if (@Model.Message.Length > 0)
+            {
+                <p class="login-message">@Model.Message</p>
+            }
+        }
     </div>
 </main>
 @section Header

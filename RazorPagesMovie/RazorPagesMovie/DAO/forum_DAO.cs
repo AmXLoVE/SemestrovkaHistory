@@ -6,11 +6,6 @@ namespace RazorPagesMovie.Model
 {
     public class ForumDAO
     {
-        public static void NewDiscussion(int discussionId, DateTime timeCreate, int personCreateId)
-        {
-            
-        }
-
         public static NpgsqlDataReader GetAllDiscussions(NpgsqlConnection connection)
         {
             return Connection.GetDataFromDb(connection, @"SELECT person_create_login, time_create, forum.name, description, discussion_id FROM FORUM");

@@ -7,8 +7,8 @@ namespace RazorPagesMovie.Model
     {
         [BindProperty] public string Name { get; set; }
         [BindProperty] public string Author { get; set; }
-        [BindProperty] public string Description { get; set; }
-        [BindProperty] public DateTime WriteDate { get; set; }
         [BindProperty] public string Url { get; set; }
+        [BindProperty] public int WriteDate { get; set; }
+        
     }
 }

@@ -8,42 +8,46 @@
 
 <main id="main">
     <div class="main-block-discussion">
-        
-            <div class="discussion-div">
-                <div class="discussion-headline">@Model.Discussion.Name</div>
-                <div class="discussion-text">
-                    @Model.Discussion.Description
-                </div>
-                <div class="discussion-info">@Model.Discussion.PersonCreateLogin, @Model.Discussion.TimeCreate.ToString("d")</div>
-            </div>
+        @if (Model.Message != null)
+        {
+            <p class="login-message">@Model.Message</p>
+        }
 
-            <div class="comments-div">
-                @if (login.IsSession && login.LoginEqualsLoginSession())
+        <div class="discussion-div">
+            <div class="discussion-headline">@Model.Discussion.Name</div>
+            <div class="discussion-text">
+                @Model.Discussion.Description
+            </div>
+            <div class="discussion-info">@Model.Discussion.PersonCreateLogin, @Model.Discussion.TimeCreate.ToString("d")</div>
+        </div>
+
+        <div class="comments-div">
+            @if (login.IsSession && login.LoginEqualsLoginSession())
+            {
+                <form method="post" class="comment-form">
+                    <textarea placeholder="Комментарий" asp-for="Comment"></textarea>
+                    <button class="add-comment" type="submit">Добавить комментарий</button>
+                </form>
+            }
+            else
+            {
+                <div class="login-message">
+                    <div>Вам нужно <a asp-page="/login">войти</a>, чтобы добавлять комментарии к данному обсуждению</div>
+                </div>
+            }
+
+            <div class="all-comments">
+                @foreach (var e in Model.Comments)
                 {
-                    <form method="post" class="comment-form">
-                        <textarea placeholder="Комментарий" asp-for="Comment"></textarea>
-                        <button class="add-comment" type="submit">Добавить комментарий</button>
-                    </form>
-                }
-                else
-                {
-                    <div class="login-message">
-                        <div>Вам нужно <a asp-page="/login">войти</a>, чтобы добавлять комментарии к данному обсуждению</div>
+                    <div class="comment">
+                        <div class="comment-text">@e.MessageText</div>
+                        <div class="comment-info">@e.PersonName, @e.MessageDate.ToString("f")</div>
                     </div>
                 }
-
-                <div class="all-comments">
-                    @foreach (var e in Model.Comments)
-                    {
-                        <div class="comment">
-                            <div class="comment-text">@e.MessageText</div>
-                            <div class="comment-info">@e.PersonName, @e.MessageDate.ToString("f")</div>
-                        </div>
-                    }
-                </div>
-
             </div>
-        
+
+        </div>
+
 
     </div>
     </main>

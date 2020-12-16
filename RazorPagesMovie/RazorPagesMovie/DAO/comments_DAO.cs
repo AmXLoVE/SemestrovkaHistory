@@ -14,8 +14,8 @@ namespace RazorPagesMovie.Model
 
         public static NpgsqlDataReader GetAllComments(int id, NpgsqlConnection connection)
         {
-            return Connection.GetDataFromDb(connection,
-                $@"SELECT MESSAGE_TEXT, MESSAGE_DATE, DISCUSSION_ID, person_login FROM DISCUSSIONS WHERE DISCUSSION_ID = '{id}' ORDER BY MESSAGE_DATE");
+            return connection.GetDataFromDb($@"SELECT MESSAGE_TEXT, MESSAGE_DATE, DISCUSSION_ID, person_login FROM DISCUSSIONS 
+WHERE DISCUSSION_ID = '{id}' ORDER BY MESSAGE_DATE");
         }
 
         public static Comments MadeNewCommentObject(NpgsqlDataReader reader, NpgsqlConnection connection)

@@ -51,4 +51,7 @@
 
     </div>
 </div>
-<p style="text-align: center">@account.Message</p>
+@if (@account.Message != null)
+{
+    <p class="login-message">@account.Message</p>
+}

@@ -12,7 +12,7 @@
       "NETCOREAPP",
       "NETCOREAPP3_1"
     ],
-    "languageVersion": "8",
+    "languageVersion": "9",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,

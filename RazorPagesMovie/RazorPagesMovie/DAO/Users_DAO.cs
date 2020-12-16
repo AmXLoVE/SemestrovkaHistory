@@ -91,7 +91,7 @@ namespace RazorPagesMovie.Model
 
         public static bool CheckLogin(string login)
         {
-            return login != null && new Regex(@"^[a-zA-Z]{3,20}$").IsMatch(login);
+            return login != null && new Regex(@"^[a-zA-Zа-яА-ЯёЁ]{3,20}$").IsMatch(login);
         }
 
         public static bool CheckPassword(string password)

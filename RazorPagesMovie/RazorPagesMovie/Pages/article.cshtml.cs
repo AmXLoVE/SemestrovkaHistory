@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Npgsql;
 using RazorPagesMovie.Model;
@@ -13,18 +14,30 @@ namespace RazorPagesMovie.Pages
         private int Id { get; set; }
         public Articles articles;
         public bool IsSelected { get; set; }
+        [BindProperty] public string Message { get; set; }
 
         public void OnGet()
         {
             var connection = Connection.Open();
-            Id = int.Parse(HttpContext.Request.Query["open"]);
-            articles = ArticlesDAO.GetArticleFromDb(connection, Id);
-            if(articles.Name == null)
+            
+            try
             {
-                articles = new Articles("", "", new List<string>() {""}, DateTime.Now, "", Id);
-                Response.Redirect("/index");
+                Id = int.Parse(HttpContext.Request.Query["open"]);
+            }
+            catch
+            {
+                ReturnWithError();
                 return;
             }
+            
+            articles = ArticlesDAO.GetArticleFromDb(connection, Id);
+            
+            if(articles.Name == null || articles.Name.Length < 1)
+            {
+                ReturnWithError();
+                return;
+            }
+            
             var a = UsersDAO.GetSelectedArticles(login.LoginSession, connection);
             var str = SelectedArticlesToString(a);
             if(str.Length > 0)
@@ -35,6 +48,10 @@ namespace RazorPagesMovie.Pages
         public void OnPost()
         {
             OnGet();
+            if (articles.Id == -1)
+            {
+                return;
+            }
             IsSelected = !IsSelected;
             var connection = Connection.Open();
             var reader = UsersDAO.GetSelectedArticles(login.Staticlogin, connection);
@@ -71,6 +88,12 @@ namespace RazorPagesMovie.Pages
                 str += reader.GetValue(4).ToString() + ",";
             str = str.Remove(str.Length - 1, 1);
             return str;
+        }
+
+        private void ReturnWithError()
+        {
+            articles = new Articles("Такой статьи не существует.", "", new List<string>() {""}, DateTime.Now, "", -1);
+            Message = "Произошла ошибка.";
         }
     }
 }

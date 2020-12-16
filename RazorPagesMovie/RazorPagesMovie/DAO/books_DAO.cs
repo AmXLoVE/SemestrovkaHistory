@@ -18,9 +18,17 @@ namespace RazorPagesMovie.Model
                 {
                     str[i] = reader.GetValue(i).ToString();
                 }
-
-                var dateTime = str[3].Split('.', ' ', ':').Select(int.Parse).ToArray();
-                var book = new Books(){Name = str[0], Author = str[1], Description = str[2], Url = str[4], WriteDate = new DateTime(dateTime[2], dateTime[1], dateTime[0])};
+                
+                try
+                {
+                    int.Parse(str[3]);
+                }
+                catch(InvalidCastException exception)
+                {
+                    continue;
+                }
+                
+                var book = new Books(){Name = str[0], Author = str[1], Url = str[2], WriteDate = int.Parse(str[3])};
                 list.Add(book);
             }
 

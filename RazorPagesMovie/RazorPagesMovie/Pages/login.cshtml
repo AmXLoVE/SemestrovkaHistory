@@ -21,7 +21,10 @@
         </div>
         <a class="sign" href="/signup">Зарегистрироваться</a>
         
-        <p class="error-message">@ViewData["error"]</p>
+        @if(Model.Message != null)
+        {
+            <p class="error-message">@Model.Message</p>
+        }
     </div>
     
 </main>

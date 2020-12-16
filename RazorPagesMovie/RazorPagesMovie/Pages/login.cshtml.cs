@@ -17,6 +17,7 @@ namespace RazorPagesMovie.Pages
         [BindProperty] public bool ZapomnitMenya { get; set; }
         [BindProperty] public static bool IsSession { get; set; }
         [BindProperty] public static string LoginSession { get; set; }
+        [BindProperty] public string Message { get; set; }
 
         public void OnGet()
         {
@@ -29,12 +30,11 @@ namespace RazorPagesMovie.Pages
         {
             if (!UsersDAO.CheckLogin(Login) || !UsersDAO.CheckPassword(Password))
             {
-                ViewData["error"] = "Неверный логин или пароль";
+                Message = "Неверный логин или пароль";
                 return;
             }
             var connection = Connection.Open();
-            var reader = Connection.GetDataFromDb(connection,
-                String.Format("SELECT users.password FROM USERS WHERE '{0}' = users.login", Staticlogin));
+            var reader = connection.GetDataFromDb($"SELECT users.password FROM USERS WHERE '{Staticlogin}' = users.login");
             if (reader.Read())
             {
                 var hashPasswordFromDb = reader.GetValue(0).ToString();
@@ -58,13 +58,9 @@ namespace RazorPagesMovie.Pages
                     LoginSession = Staticlogin;
                 }
                 else
-                    ViewData["error"] = "Неверный логин или пароль";
-
-                passwordAndSalt = new Tuple<string, string>(null, null);
-                hashPasswordFromDb = null;
-                hashPassword = null;
+                    Message = "Неверный логин или пароль";
             }
-            else ViewData["error"] = "Неверный логин или пароль";
+            else Message = "Неверный логин или пароль";
         }
 
         public static bool LoginEqualsLoginSession()
