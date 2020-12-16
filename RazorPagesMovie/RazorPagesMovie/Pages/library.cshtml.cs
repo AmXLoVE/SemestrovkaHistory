@@ -7,11 +7,8 @@ namespace RazorPagesMovie.Pages
 {
     public class library : PageModel
     {
-        [BindProperty] public List<Books> books
-        {
-            get => BooksDAO.GetAllBooks(Connection.Open());
-        }
-        
+        [BindProperty] public List<Books> Books => BooksDAO.GetAllBooks(Connection.Open());
+
         public void OnGet()
         {
             

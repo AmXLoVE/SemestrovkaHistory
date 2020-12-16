@@ -23,47 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd8abb73-9176-4906-92f9-d4a371475ded" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorPagesMovie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/App.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/DAO/Users_DAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/DAO/Users_DAO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/DAO/books_DAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/DAO/books_DAO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/DAO/comments_DAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/DAO/comments_DAO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/DAO/forum_DAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/DAO/forum_DAO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Model/books.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Model/books.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/article.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/RazorPagesMovie.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/RazorPagesMovie.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/Web.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/bin/Debug/netcoreapp5.0/RazorPagesMovie.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp3.1/RazorPagesMovie.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp3.1/RazorPagesMovie.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/account-settings.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/account-settings.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/article.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/article.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/discussion.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/discussion.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/login.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/login.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/new-discussion.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/Razor/Pages/new-discussion.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/Debug/netcoreapp5.0/RazorPagesMovie.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/RazorPagesMovie.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RazorPagesMovie/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/RazorPagesMovie/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +123,6 @@
         <option value="$PROJECT_DIR$/RazorPagesMovie/DAO/comments_DAO.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/App.config" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Web.config" />
-        <option value="$PROJECT_DIR$/RazorPagesMovie/DAO/books_DAO.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/DAO/forum_DAO.cs" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/discussion.cshtml" />
@@ -167,6 +134,7 @@
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/login.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/account-settings.cshtml" />
         <option value="$PROJECT_DIR$/RazorPagesMovie/Pages/new-discussion.cshtml.cs" />
+        <option value="$PROJECT_DIR$/RazorPagesMovie/DAO/books_DAO.cs" />
       </list>
     </option>
   </component>
@@ -247,7 +215,7 @@
       <workItem from="1608028831178" duration="1527000" />
       <workItem from="1608031154050" duration="2063000" />
       <workItem from="1608037553055" duration="2320000" />
-      <workItem from="1608109376346" duration="5760000" />
+      <workItem from="1608109376346" duration="6163000" />
     </task>
     <servers />
   </component>
@@ -274,22 +242,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="543" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1608032525075" />
-    <state width="746" height="150" key="GridCell.Tab.0.bottom" timestamp="1608115085055">
+    <state width="746" height="150" key="GridCell.Tab.0.bottom" timestamp="1608115462512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608115085055" />
-    <state width="746" height="150" key="GridCell.Tab.0.center" timestamp="1608115085055">
+    <state width="746" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608115462512" />
+    <state width="746" height="150" key="GridCell.Tab.0.center" timestamp="1608115462512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608115085055" />
-    <state width="746" height="150" key="GridCell.Tab.0.left" timestamp="1608115085054">
+    <state width="746" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608115462512" />
+    <state width="746" height="150" key="GridCell.Tab.0.left" timestamp="1608115462511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608115085054" />
-    <state width="746" height="150" key="GridCell.Tab.0.right" timestamp="1608115085055">
+    <state width="746" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608115462511" />
+    <state width="746" height="150" key="GridCell.Tab.0.right" timestamp="1608115462512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608115085055" />
+    <state width="746" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608115462512" />
     <state width="1315" height="161" key="GridCell.Tab.1.bottom" timestamp="1608111860061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

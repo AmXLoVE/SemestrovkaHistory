@@ -35,16 +35,16 @@
                       </tr>
                     </thead>
                     <tbody>
-                    @for(var i = 0; i < Model.books.Count; i++)
+                    @for(var i = 0; i < Model.Books.Count; i++)
                     {
                         <tr>
                             <th scope="row">@(i+1)</th>
-                            <td>@Model.books[i].Name</td>
-                            <td>@Model.books[i].Author</td>
-                            <td>@Model.books[i].WriteDate.ToString("d")</td>
+                            <td>@Model.Books[i].Name</td>
+                            <td>@Model.Books[i].Author</td>
+                            <td>@Model.Books[i].WriteDate.ToString("d")</td>
                             <td>
-                                <a class="book" href="@Model.books[i].Url">Открыть</a>
-                                <a class="book" href="@Model.books[i].Url" download>Скачать</a>
+                                <a class="book" href="@Model.Books[i].Url">Открыть</a>
+                                <a class="book" href="@Model.Books[i].Url" download>Скачать</a>
                             </td>
                         </tr>
                     }

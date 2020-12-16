@@ -38,6 +38,7 @@ namespace RazorPagesMovie.Pages
             var command = $@"INSERT INTO FORUM VALUES ('{login.Staticlogin}', '{DateTime.Now:d}', @name, @description)";
             connection.SendCommandWithoutAnswer(command, new List<NpgsqlParameter>() {nameParam, descriptionParam});
             Response.Redirect("/forum");
+            connection.Close();
         }
     }
 }
