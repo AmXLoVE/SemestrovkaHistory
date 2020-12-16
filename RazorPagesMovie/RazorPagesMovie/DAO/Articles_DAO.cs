@@ -10,7 +10,7 @@ namespace RazorPagesMovie.Model
     {
         public static List<Articles> GetAllArticles(NpgsqlConnection connection)
         {
-            var reader = connection.GetDataFromDb($@"SELECT * FROM ARTICLES ORDER BY DATE_CREATE");
+            var reader = connection.GetDataFromDb($@"SELECT * FROM ARTICLES ORDER BY DATE_CREATE DESC");
             var articles = new List<Articles>();
             while(reader.Read())
             {

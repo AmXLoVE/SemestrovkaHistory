@@ -62,13 +62,13 @@ namespace RazorPagesMovie.Pages
             connection.GetDataFromDb($@"UPDATE USERS SET SELECTED_ARTICLES_ID = '{str}' WHERE LOGIN = '{login.Staticlogin}'");
         }
 
-        public string SelectedArticlesToString(NpgsqlDataReader reader)
+        public static string SelectedArticlesToString(NpgsqlDataReader reader)
         {
             var str = "";
             if (reader == null || !reader.Read() || reader.IsDBNull(0)) return str;
-            str += reader.GetValue(5).ToString() + ",";
+            str += reader.GetValue(4).ToString() + ",";
             while(reader.Read())
-                str += reader.GetValue(5).ToString() + ",";
+                str += reader.GetValue(4).ToString() + ",";
             str = str.Remove(str.Length - 1, 1);
             return str;
         }
