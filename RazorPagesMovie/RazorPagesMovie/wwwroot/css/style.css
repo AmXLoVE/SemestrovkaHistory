@@ -728,8 +728,6 @@ div.up {
     font-size: 20px;
     color: var(--gray-color);
     font-weight: 400;
-    text-transform: capitalize;
-    
 }
 
 .form-discussion-info {
