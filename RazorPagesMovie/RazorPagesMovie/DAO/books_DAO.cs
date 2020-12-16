@@ -31,7 +31,7 @@ namespace RazorPagesMovie.Model
                 var book = new Books(){Name = str[0], Author = str[1], Url = str[2], WriteDate = int.Parse(str[3])};
                 list.Add(book);
             }
-
+            connection.Close();
             return list;
         }
     }
